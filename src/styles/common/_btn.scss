@@ -1,0 +1,45 @@
+@import "variables";
+@import "mixin";
+
+.btn {
+    min-width: 135px;
+    height: 52px;
+    padding: 0 10px;
+    border: 2px solid transparent;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    line-height: 1;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'akrobat', sans-serif;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    
+    &-white {
+        min-width: 149px;
+        height: 49px;
+        padding: 0 32px;
+        color: #000;
+        border: 5px solid #fff;
+        background-color: #fff;
+        position: relative;
+        z-index: 1;
+        @include font-size(19px);
+        
+        &:not(:disabled):hover {
+            border-color: #DADADA;
+            color: #000
+        }
+        &:disabled {
+            cursor: default;
+            pointer-events: none;
+            background-color: #626262;
+            border-color: #626262;
+        }
+    }
+}

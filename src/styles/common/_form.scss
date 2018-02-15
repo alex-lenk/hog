@@ -1,0 +1,150 @@
+@import "mixin";
+@import "variables";
+
+.ui-placeholder, .form-control {
+    @include hidePlaceholder {
+        opacity: 1;
+        font-weight: 300;
+        color: #fff;
+        transition: opacity 0.3s ease;
+        font-family: 'akrobat', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Segoe UI Symbol";
+        @include font-size(18px);
+    }
+    &:focus {
+        @include hidePlaceholder {
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+    }
+}
+
+.ui-group, .form-group {
+    margin-bottom: 59px;
+    position: relative;
+    &::after {
+        width: 0;
+        height: 1px;
+        top: 33px;
+        left: 0;
+        position: absolute;
+        z-index: 5;
+        background-color: #fff;
+        content: '';
+        transition: width .3s ease;
+    }
+}
+
+.ui-error__text, .ui-label {
+    top: 3px;
+    left: 12px;
+    margin-bottom: 0;
+    font-weight: 300;
+    pointer-events: none;
+    transition: all .3s ease;
+    position: absolute;
+    @include font-size(18px);
+}
+
+.ui-label {
+    color: #dadada;
+}
+
+textarea.ui-field, textarea.form-control {
+    min-height: 34px;
+}
+
+.ui-field, .form-control {
+    height: 34px;
+    width: 100%;
+    padding: 0 12px;
+    background: transparent;
+    color: #dadada;
+    font-weight: 300;
+    display: block;
+    outline: none;
+    border: 0;
+    border-bottom: 1px solid #4E4E4E;
+    transition: all .3s ease;
+    font-family: 'akrobat', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Segoe UI Symbol";
+    @include font-size(18px);
+}
+
+.field-filled {
+    &::after {
+        width: 100%;
+    }
+    .ui-error__text {
+        opacity: 0;
+    }
+    &.ui-error .ui-label {
+        opacity: 1;
+    }
+}
+
+.ui-field:focus +, .form-control:focus +, .field-filled {
+    .ui-label {
+        top: -22px;
+        left: 7px;
+        transform: scale(.8);
+    }
+}
+
+.ui-error {
+    .ui-label {
+        opacity: 0;
+    }
+    .ui-field {
+        border-bottom-color: #FE5E5E;
+        &:focus ~ .ui-error__text {
+            opacity: 0;
+            pointer-events: none;
+        }
+    }
+}
+
+.has-error {
+    &.product-select .text-danger {
+        display: none;
+    }
+    .text-danger {
+        top: 50px;
+        left: 0;
+        position: absolute;
+        color: #FE5E5E;
+        font-size: 16px;
+    }
+    .control-label {
+        color: #FE5E5E;
+    }
+    .ui-field, .form-control {
+        color: #FE5E5E;
+        outline: 1px solid #FE5E5E;
+    }
+    .jq-selectbox__trigger-arrow {
+        background: url(../img/arrow-error.svg) no-repeat;
+    }
+}
+
+.ui-error__text {
+    color: #FE5E5E;
+    transition: opacity .3s ease;
+}
+
+input::-webkit-contacts-auto-fill-button {
+    visibility: hidden;
+    display: none !important;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s; /* выставляется желаемая задержка */
+}
+
+input:-webkit-autofill {
+    -webkit-text-fill-color: #dadada !important;
+}
