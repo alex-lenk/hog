@@ -33,6 +33,7 @@
 }
 
 .header-panel {
+    margin-bottom: 165px;
     z-index: 5;
     position: relative;
     line-height: 1;
@@ -134,4 +135,82 @@
     margin-right: 5px;
     text-transform: uppercase;
     transition: all 0.4s ease;
+}
+
+/*****************************************/
+
+.logo-hog {
+    text-transform: uppercase;
+    color: $colorOrange;
+    font-weight: 700;
+    line-height: 1;
+    @include font-size(45px);
+}
+
+.logo-hog-color {
+    color: #fff;
+}
+
+/*****************************************/
+
+.header-date {
+    margin-top: 22px;
+    margin-bottom: 17px;
+    position: relative;
+    display: flex;
+}
+
+.header-date__number {
+    color: $colorOrange;
+    line-height: 1;
+    position: relative;
+    z-index: 2;
+    font-family: 'ristretto_prosemibold', akrobat, sans-serif;
+    @include font-size(73px);
+}
+
+.header-date__month {
+    top: 9px;
+    left: 36px;
+    position: absolute;
+    transform: rotate(90deg);
+}
+
+.header-date__location {
+    max-width: 237px;
+    padding-left: 44px;
+    top: -6px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 29px;
+    @include font-size(26px);
+}
+
+/*****************************************/
+
+.header-left {
+    padding-top: 50px;
+}
+
+.header-content {
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.header-content__text {
+}
+
+.header-content__link {
+    color: $colorOrange;
+    border-bottom: 1px solid;
+}
+
+.header-biker {
+}
+
+.header-biker__media {
+    width: 100%;
+    max-width: 649px;
+    margin-left: auto;
 }
