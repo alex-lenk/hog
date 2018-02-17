@@ -3,7 +3,9 @@
  * Content of libraries
  * 1.   smoothscroll.js
  * 2.   svgxuse.min.js
- * 3.   jquery.fullPage.js
+ * 3.   click-scroll.js
+ *
+ *
  * 4.   swiper.min.js
  * 5.   jquery.formstyler.min.js
  * 6.   isotope.pkgd.min.js
@@ -18,6 +20,9 @@
 
 /* 2. svgxuse.min.js */
 //= lib/svgxuse.min.js
+
+/* 3. jquery.stickymenu.js */
+// = lib/click-scroll.js
 
 
 /* 3. jquery.fullPage.js */

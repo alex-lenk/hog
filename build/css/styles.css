@@ -63,18 +63,18 @@ body {
   font-family: akrobat, -apple-system, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
   font-size: 1.1875rem;
   /*    &::before {
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        position: fixed;
-        background: #000 url(../img/bg/bg-body@2x.jpg) no-repeat center;
-        background-size: cover;
-        z-index: -1;
-        will-change: transform;
-        pointer-events: none;
-        content: '';
-    }*/ }
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: fixed;
+            background: #000 url(../img/bg/bg-body@2x.jpg) no-repeat center;
+            background-size: cover;
+            z-index: -1;
+            will-change: transform;
+            pointer-events: none;
+            content: '';
+        }*/ }
 
 a, .as-link {
   color: #5A5A5A;
@@ -261,26 +261,39 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 .page .menu {
   padding-top: 10px; }
 
+@keyframes spin {
+  0% {
+    height: 0; }
+  50% {
+    height: 100%; }
+  100% {
+    height: 0; } }
+
 .header {
   height: 100vh;
   background: url(../img/bg/header-bg.jpg) no-repeat center;
-  background-size: cover; }
+  background-size: cover;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column; }
 
 .header-container {
-  height: 100%;
   padding-top: 35px;
-  position: relative; }
+  position: relative;
+  -ms-flex: 1;
+  flex: 1; }
   .header-container::before {
-    width: 265px;
-    height: 100vh;
-    background: url(../img/img-head-column.png) no-repeat top center;
-    background-size: 100% 100%;
+    width: 205px;
+    height: 100%;
     position: absolute;
     left: 50%;
     top: 0;
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    content: ''; }
+    content: '';
+    background-image: linear-gradient(0deg, transparent 0%, rgba(110, 110, 110, 0.36) 25%, #757575 47%);
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25); }
 
 .header-panel {
   margin-bottom: 165px;
@@ -433,3 +446,75 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   width: 100%;
   max-width: 649px;
   margin-left: auto; }
+
+/*****************************************/
+.header-bottom {
+  margin-top: auto;
+  color: #C6C6C6;
+  overflow: hidden;
+  font-size: 1.125rem; }
+  .header-bottom li {
+    position: relative; }
+    .header-bottom li:not(:first-child):not(:last-child) {
+      text-align: center; }
+    .header-bottom li:first-child::before, .header-bottom li:last-child::before {
+      width: 150rem;
+      height: 100%;
+      top: 0;
+      position: absolute;
+      content: '';
+      background-color: inherit; }
+    .header-bottom li:first-child {
+      background-color: rgba(0, 0, 0, 0.1); }
+      .header-bottom li:first-child::before {
+        right: 100%; }
+    .header-bottom li:nth-child(2) {
+      background-color: rgba(0, 0, 0, 0.15); }
+    .header-bottom li:nth-child(3) {
+      background-color: rgba(0, 0, 0, 0.2); }
+      .header-bottom li:nth-child(3) .header-bottom__text {
+        padding-right: 15px; }
+    .header-bottom li:last-child {
+      text-align: right;
+      background-color: rgba(0, 0, 0, 0.25); }
+      .header-bottom li:last-child::before {
+        left: 100%; }
+
+.header-bottom__block {
+  height: 121px;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: left; }
+
+.header-bottom__icon {
+  width: 39px;
+  height: 38px;
+  margin-right: 20px;
+  fill: #fff; }
+
+.header-bottom__text {
+  line-height: 22px; }
+
+.header-down {
+  width: 1px;
+  height: 65px;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+  z-index: 12;
+  position: absolute;
+  overflow: hidden; }
+  .header-down::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    background-color: #EE7D00;
+    animation: spin 1.5s 1000 linear; }
+
+/*****************************************/
