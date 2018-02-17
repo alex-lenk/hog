@@ -31,8 +31,10 @@
 <header class="header">
     <div class="header-container container">
         <div class="header-panel">
-            <div class="header-logo__text">
-                <a href="#"><img src="img/logo-text.png" srcset="img/logo-text@2x.png 2x" alt=""></a>
+            <div class="open-menu">
+                <svg class="nav-button">
+                    <use xlink:href="img/sprite.svg#nav-button"></use>
+                </svg>
             </div>
 
             <ul class="header-menu">
@@ -77,10 +79,16 @@
                     </svg>
                 </li>
             </ul>
+
+            <div class="close-menu">
+                <svg class="close">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+            </div>
         </div>
 
         <div class="row">
-            <div class="header-left col-lg-4">
+            <div class="header-left col-lg-4 col-md-5">
                 <div class="logo-hog">
                     H.O.G.® Rally <span class="logo-hog-color">Minsk</span>
                 </div>
@@ -99,7 +107,7 @@
                     <span class="header-content__link">ПРОГРАММА</span>
                 </div>
             </div>
-            <div class="header-biker col-lg-8">
+            <div class="header-biker col-lg-8 col-md-7">
                 <div class="header-biker__media">
                     <img src="img/img-biker.png" srcset="img/img-biker@2x.png 2x" alt="">
                 </div>
@@ -110,7 +118,7 @@
     <div class="header-bottom">
         <div class="container">
             <ul class="row list-unstyled">
-                <li class="col-lg-3">
+                <li class="col-md-3">
                     <div class="header-bottom__block">
                         <svg class="header-bottom__icon guitar-music">
                             <use xlink:href="img/sprite.svg#guitar-music"></use>
@@ -119,7 +127,7 @@
                         <div class="header-bottom__text">Концерт, выставки,<br> детский городок</div>
                     </div>
                 </li>
-                <li class="col-lg-3">
+                <li class="col-md-3">
                     <div class="header-bottom__block">
                         <svg class="header-bottom__icon parade">
                             <use xlink:href="img/sprite.svg#parade"></use>
@@ -128,7 +136,7 @@
                         <div class="header-bottom__text">Торжественный<br> парад</div>
                     </div>
                 </li>
-                <li class="col-lg-3">
+                <li class="col-md-3">
                     <div class="header-bottom__block">
                         <svg class="header-bottom__icon fireworks">
                             <use xlink:href="img/sprite.svg#fireworks"></use>
@@ -137,7 +145,7 @@
                         <div class="header-bottom__text">Праздничный<br> салют</div>
                     </div>
                 </li>
-                <li class="col-lg-3">
+                <li class="col-md-3">
                     <div class="header-bottom__block">
                         <svg class="header-bottom__icon mirror-ball">
                             <use xlink:href="img/sprite.svg#mirror-ball"></use>

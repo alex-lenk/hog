@@ -277,14 +277,20 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column; }
+  .header::before {
+    height: 100%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    background: url(../img/bg/header-left-bg@2x.png) no-repeat top right;
+    background-size: contain;
+    content: ''; }
 
 .header-container {
   padding-top: 35px;
-  position: relative;
   -ms-flex: 1;
   flex: 1; }
   .header-container::before {
-    width: 205px;
     height: 100%;
     position: absolute;
     left: 50%;
@@ -296,7 +302,6 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25); }
 
 .header-panel {
-  margin-bottom: 165px;
   z-index: 5;
   position: relative;
   line-height: 1;
@@ -308,12 +313,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   font-size: 1rem; }
 
 /* ********************************** */
-.header-logo__text {
-  display: none; }
-
-/* ********************************** */
 .header-menu {
-  padding-top: 23px;
   padding-left: 0;
   margin-bottom: 0;
   list-style: none;
@@ -324,12 +324,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between; }
-  .header-menu:first-of-type {
-    max-width: 387px; }
   .header-menu:not(:first-of-type) {
-    margin-right: 87px;
-    margin-left: auto;
-    max-width: 284px; }
+    margin-left: auto; }
 
 .header-menu__point {
   border-bottom: 1px solid transparent; }
@@ -399,11 +395,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 /*****************************************/
 .header-date {
-  margin-top: 22px;
-  margin-bottom: 17px;
-  position: relative;
-  display: -ms-flexbox;
-  display: flex; }
+  position: relative; }
 
 .header-date__number {
   color: #EE7D00;
@@ -442,9 +434,12 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   color: #EE7D00;
   border-bottom: 1px solid; }
 
+.header-biker {
+  position: relative;
+  z-index: 5; }
+
 .header-biker__media {
   width: 100%;
-  max-width: 649px;
   margin-left: auto; }
 
 /*****************************************/
@@ -500,7 +495,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 .header-down {
   width: 1px;
-  height: 65px;
+  height: 58px;
   bottom: 0;
   left: 50%;
   margin-left: -1px;

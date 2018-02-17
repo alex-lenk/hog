@@ -15,27 +15,33 @@
     background-size: cover;
     display: flex;
     flex-direction: column;
+    &::before {
+        height: 100%;
+        right: 0;
+        top: 0;
+        position: absolute;
+        background: url(../img/bg/header-left-bg@2x.png) no-repeat top right;
+        background-size: contain;
+        content: '';
+    }
 }
 
 .header-container {
     padding-top: 35px;
-    position: relative;
     flex: 1;
     &::before {
-        width: 205px;
         height: 100%;
         position: absolute;
         left: 50%;
         top: 0;
         transform: translateX(-50%);
         content: '';
-        background-image: linear-gradient(0deg, rgba(0,0,0,0.00) 0%, rgba(110,110,110,0.36) 25%, #757575 47%);
-        box-shadow: 0 0 30px 0 rgba(0,0,0,0.25);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(110, 110, 110, 0.36) 25%, #757575 47%);
+        box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
     }
 }
 
 .header-panel {
-    margin-bottom: 165px;
     z-index: 5;
     position: relative;
     line-height: 1;
@@ -47,14 +53,7 @@
 
 /* ********************************** */
 
-.header-logo__text {
-    display: none;
-}
-
-/* ********************************** */
-
 .header-menu {
-    padding-top: 23px;
     padding-left: 0;
     margin-bottom: 0;
     list-style: none;
@@ -62,13 +61,8 @@
     flex: 1;
     display: flex;
     justify-content: space-between;
-    &:first-of-type {
-        max-width: 387px;
-    }
     &:not(:first-of-type) {
-        margin-right: 87px;
         margin-left: auto;
-        max-width: 284px;
     }
 }
 
@@ -156,10 +150,7 @@
 /*****************************************/
 
 .header-date {
-    margin-top: 22px;
-    margin-bottom: 17px;
     position: relative;
-    display: flex;
 }
 
 .header-date__number {
@@ -209,11 +200,12 @@
 }
 
 .header-biker {
+    position: relative;
+    z-index: 5;
 }
 
 .header-biker__media {
     width: 100%;
-    max-width: 649px;
     margin-left: auto;
 }
 
@@ -285,7 +277,7 @@
 
 .header-down {
     width: 1px;
-    height: 65px;
+    height: 58px;
     bottom: 0;
     left: 50%;
     margin-left: -1px;
