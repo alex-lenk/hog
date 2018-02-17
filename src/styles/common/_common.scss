@@ -18,7 +18,7 @@ body {
     color: #fff;
     font-weight: 300;
     background-color: #262626;
-    font-family: 'akrobat', -apple-system, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+    font-family: akrobat, -apple-system, "Segoe UI", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
     @include font-size(19px);
 /*    &::before {
         width: 100%;
@@ -38,7 +38,7 @@ body {
 a, .as-link {
     color: #5A5A5A;
     text-decoration: none;
-    transition: all 0.3s ease;
+    transition: all 0.4s ease;
     &:hover {
         color: inherit;
     }

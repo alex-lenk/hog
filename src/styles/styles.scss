@@ -4,7 +4,134 @@
 @import "common/variables";
 @import "common/mixin";
 @import "common/fonts";
-@import "common/btn";
+/*@import "common/btn";
 @import "common/form";
-@import "common/checkbox-radio";
+@import "common/checkbox-radio";*/
 @import "common/common";
+
+.header {
+    height: 100vh;
+    background: url(../img/bg/header-bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.header-container {
+    height: 100%;
+    padding-top: 35px;
+    position: relative;
+    &::before {
+        width: 265px;
+        height: 100vh;
+        background: url(../img/img-head-column.png) no-repeat top center;
+        background-size: 100% 100%;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        content: '';
+    }
+}
+
+.header-panel {
+    z-index: 5;
+    position: relative;
+    line-height: 1;
+    font-weight: 400;
+    display: flex;
+    align-items: flex-start;
+    @include font-size(16px);
+}
+
+/* ********************************** */
+
+.header-logo__text {
+    display: none;
+}
+
+/* ********************************** */
+
+.header-menu {
+    padding-top: 23px;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    text-transform: uppercase;
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    &:first-of-type {
+        max-width: 387px;
+    }
+    &:not(:first-of-type) {
+        margin-right: 87px;
+        margin-left: auto;
+        max-width: 284px;
+    }
+}
+
+.header-menu__point {
+    border-bottom: 1px solid transparent;
+    &:not(.header-menu__active) {
+        color: #fff;
+        &:hover {
+            color: $colorOrange;
+        }
+    }
+}
+
+.header-menu__active {
+    color: $colorOrange;
+    border-bottom-color: $colorOrange;
+}
+
+.header-menu__link {
+    color: inherit;
+}
+
+/* ********************************** */
+
+.header-logo {
+    width: 152px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ********************************** */
+
+.header-lang {
+    padding-top: 23px;
+    cursor: pointer;
+    display: flex;
+}
+
+.header-lang__item {
+    padding-right: 10px;
+    position: relative;
+    color: $colorOrange;
+    &:not(.header-lang__active) {
+        display: none;
+    }
+    &:hover .header-lang__text {
+        border-bottom-color: $colorOrange;
+    }
+    .arrow {
+        width: 10px;
+        height: 10px;
+        fill: $colorOrange;
+        position: absolute;
+        top: 2px;
+        right: 0;
+    }
+}
+
+.header-lang__active {
+    display: flex;
+}
+
+.header-lang__text {
+    border-bottom: 1px solid transparent;
+    margin-right: 5px;
+    text-transform: uppercase;
+    transition: all 0.4s ease;
+}

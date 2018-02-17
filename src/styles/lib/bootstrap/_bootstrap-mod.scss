@@ -353,63 +353,21 @@ pre code {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
-@media (max-width: 767px) {
-    .container-fluid, .container {
-        padding-right: 15px;
-        padding-left: 15px;
-    }
-    .row {
-        margin-right: -15px;
-        margin-left: -15px;
-    }
-}
-
-@media (min-width: 768px) {
-    .container-fluid, .container {
-        padding-right: 60px;
-        padding-left: 60px;
-    }
-    .row {
-        margin-right: -60px;
-        margin-left: -60px;
-    }
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
 }
 
 @media (min-width: 1100px) {
-    .container-fluid, .container {
-        padding-right: 75px;
-        padding-left: 75px;
-    }
-    .container {
-        max-width: 1700px;
-    }
-    .row {
-        margin-right: -75px;
-        margin-left: -75px;
-    }
 }
 
 @media (min-width: 1440px) {
-    .container-fluid, .container {
-        padding-right: 88px;
-        padding-left: 88px;
-    }
-    .row {
-        margin-right: -88px;
-        margin-left: -88px;
-    }
-}
-
-@media (min-width: 1920px) {
-    .container-fluid, .container {
-        padding-right: 100px;
-        padding-left: 100px;
-    }
-    .row {
-        margin-right: -100px;
-        margin-left: -100px;
+    .container {
+        max-width: 1170px;
     }
 }
 

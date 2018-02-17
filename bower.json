@@ -12,13 +12,7 @@
   "license": "MIT",
   "dependencies": {
     "jquery": "3.*",
-    "normalize-css": "^7.0.0",
-    "swiper": "^4.1.0",
-    "fullpage.js": "^2.9.5",
-    "masonry-layout": "masonry#^4.2.1",
-    "salvattore": "^1.0.9",
-    "isotope-layout": "^3.0.5",
-    "imagesloaded": "^4.1.4",
-    "fancybox": "^3.2.5"
+    "fancybox": "^3.2.*",
+    "normalize.css": "^8.0.0"
   }
 }
