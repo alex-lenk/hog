@@ -5,8 +5,8 @@
 @import "common/mixin";
 @import "common/fonts";
 @import "common/btn";
-/*@import "common/form";
-@import "common/checkbox-radio";*/
+@import "common/form";
+/*@import "common/checkbox-radio";*/
 @import "common/common";
 @import "blocks/header";
 
@@ -57,7 +57,8 @@
     text-align: right;
 }
 
-/**/
+/*****************************************/
+
 .program-event {
     background: url(../img/bg/program-event-bg.png) no-repeat top center;
 }
@@ -107,7 +108,7 @@
     @include font-size(20px);
 }
 
-/**/
+/*****************************************/
 
 .panel {
     margin-bottom: 1px;
@@ -126,10 +127,18 @@
     border-right: 2px solid #252525;
     font-weight: 500;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     flex: 0 0 144px;
     @include font-size(30px);
+}
+
+.panel-heading__date {
+    text-align: center;
+    display: block;
+    color: $colorOrange;
+    @include font-size(15px);
 }
 
 .panel-heading__event {
@@ -169,4 +178,40 @@
         fill: $colorOrange;
         transition: fill 0.4s ease;
     }
+}
+
+.panel-body__head {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.panel-body__price {
+    margin-left: auto;
+    font-weight: 500;
+    @include font-size(22px);
+    .human {
+        margin-left: 10px;
+        font-weight: 400;
+        @include font-size(19px);
+    }
+}
+
+/*****************************************/
+
+.bid-form {
+    width: 392px;
+    margin-left: 60px;
+    padding: 37px 30px 30px;
+    float: right;
+    background-color: rgba(#171817, .7);
+}
+
+.bid-form__title {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 22px;
+    text-align: center;
+    letter-spacing: 0;
+    @include font-size(24px)
 }

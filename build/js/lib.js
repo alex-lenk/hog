@@ -3,7 +3,7 @@
  * Content of libraries
  * 1.   smoothscroll.js
  * 2.   svgxuse.min.js
- * 3.   click-scroll.js
+ * 3.   jquery.everslider.min.js
  *
  *
  * 4.   swiper.min.js
@@ -780,8 +780,8 @@
     c.top&&0===c.bottom;c&&0===c.width&&0===c.height&&!b?a.length&&(b=e[a],!0!==b&&setTimeout(l({useEl:h[g],base:a,hash:m,isXlink:k}),0),void 0===b&&(k=v(a),void 0!==k&&(b=new k,e[a]=b,b.onload=n(b),b.onerror=p(b),b.ontimeout=p(b),b.open("GET",a),b.send(),r+=1))):b?a.length&&e[a]&&setTimeout(l({useEl:h[g],base:a,hash:m,isXlink:k}),0):void 0===e[a]?e[a]=!0:e[a].onload&&(e[a].abort(),delete e[a].onload,e[a]=!0)}h="";r+=1;d()};var l;l=function(){window.removeEventListener("load",l,!1);t=setTimeout(n,0)};
     "complete"!==document.readyState?window.addEventListener("load",l,!1):l()}})();
 
-/* 3. jquery.stickymenu.js */
-// = lib/click-scroll.js
+/* 3. jquery.everslider.min.js */
+// = lib/jquery.everslider.min.js
 
 
 /* 3. jquery.fullPage.js */

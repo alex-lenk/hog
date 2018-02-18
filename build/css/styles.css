@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* common */
 @font-face {
   font-family: akrobat;
@@ -99,9 +100,139 @@
       pointer-events: none;
       background-color: #A0A0A0;
       color: #fff; }
+  .btn-white {
+    width: 100%;
+    height: 55px;
+    background: #fff;
+    color: #EE7D00;
+    font-weight: 500;
+    font-size: 1rem; }
+    .btn-white:hover {
+      color: #fff;
+      background-color: #EE7D00; }
 
-/*@import "common/form";
-@import "common/checkbox-radio";*/
+.ui-placeholder::-moz-placeholder, .form-control::-moz-placeholder {
+  opacity: 1;
+  font-weight: 300;
+  color: #C6C6C6;
+  transition: opacity 0.3s ease;
+  font-family: akrobat, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Segoe UI Symbol";
+  font-size: 1.125rem; }
+
+.ui-placeholder:-ms-input-placeholder, .form-control:-ms-input-placeholder {
+  opacity: 1;
+  font-weight: 300;
+  color: #C6C6C6;
+  transition: opacity 0.3s ease;
+  font-family: akrobat, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Segoe UI Symbol";
+  font-size: 1.125rem; }
+
+.ui-placeholder::-ms-input-placeholder, .form-control::-ms-input-placeholder {
+  opacity: 1;
+  font-weight: 300;
+  color: #C6C6C6;
+  transition: opacity 0.3s ease;
+  font-family: akrobat, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Segoe UI Symbol";
+  font-size: 1.125rem; }
+
+.ui-placeholder::-webkit-input-placeholder, .form-control::-webkit-input-placeholder {
+  opacity: 1;
+  font-weight: 300;
+  color: #C6C6C6;
+  transition: opacity 0.3s ease;
+  font-family: akrobat, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Segoe UI Symbol";
+  font-size: 1.125rem; }
+
+.ui-placeholder:focus::-moz-placeholder, .form-control:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease; }
+
+.ui-placeholder:focus:-ms-input-placeholder, .form-control:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease; }
+
+.ui-placeholder:focus::-ms-input-placeholder, .form-control:focus::-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease; }
+
+.ui-placeholder:focus::-webkit-input-placeholder, .form-control:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease; }
+
+.ui-group {
+  margin-bottom: 15px;
+  position: relative; }
+
+textarea.ui-field, textarea.form-control {
+  padding-top: 12px;
+  min-height: 99px; }
+
+.ui-field {
+  height: 47px;
+  width: 100%;
+  padding: 0 22px;
+  background: transparent;
+  color: #fff;
+  font-weight: 300;
+  display: block;
+  outline: none;
+  text-transform: uppercase;
+  border: 1px solid rgba(83, 83, 80, 0.7);
+  transition: all .4s ease;
+  font-family: akrobat, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Segoe UI Symbol";
+  font-size: 1rem; }
+
+.field-filled .ui-field {
+  color: #fff;
+  border-color: #fff !important; }
+
+.field-filled .has-error__text {
+  opacity: 0; }
+
+.has-error .ui-field {
+  border-color: #EE7D00; }
+  .has-error .ui-field::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+  .has-error .ui-field:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+  .has-error .ui-field::-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+  .has-error .ui-field::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+  .has-error .ui-field:focus + .has-error__text {
+    opacity: 0; }
+
+.has-error .has-error__text {
+  text-transform: uppercase;
+  position: absolute;
+  color: #EE7D00;
+  left: 22px;
+  top: 14px;
+  pointer-events: none;
+  font-size: 1rem; }
+
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0; }
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  transition: background-color 5000s ease-in-out 0s;
+  /* выставляется желаемая задержка */ }
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #dadada !important; }
+
+/*@import "common/checkbox-radio";*/
 html {
   font-family: sans-serif;
   line-height: 1.15;
@@ -517,7 +648,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   padding-top: 6px;
   text-align: right; }
 
-/**/
+/*****************************************/
 .program-event {
   background: url(../img/bg/program-event-bg.png) no-repeat top center; }
 
@@ -559,7 +690,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   font-weight: 400;
   font-size: 1.25rem; }
 
-/**/
+/*****************************************/
 .panel {
   margin-bottom: 1px; }
 
@@ -578,6 +709,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   font-weight: 500;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-align: center;
   align-items: center;
   -ms-flex-pack: center;
@@ -585,6 +718,12 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   -ms-flex: 0 0 144px;
   flex: 0 0 144px;
   font-size: 1.875rem; }
+
+.panel-heading__date {
+  text-align: center;
+  display: block;
+  color: #EE7D00;
+  font-size: 0.9375rem; }
 
 .panel-heading__event {
   padding-left: 58px;
@@ -622,3 +761,35 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     margin-right: 6px;
     fill: #EE7D00;
     transition: fill 0.4s ease; }
+
+.panel-body__head {
+  margin-bottom: 20px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.panel-body__price {
+  margin-left: auto;
+  font-weight: 500;
+  font-size: 1.375rem; }
+  .panel-body__price .human {
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: 1.1875rem; }
+
+/*****************************************/
+.bid-form {
+  width: 392px;
+  margin-left: 60px;
+  padding: 37px 30px 30px;
+  float: right;
+  background-color: rgba(23, 24, 23, 0.7); }
+
+.bid-form__title {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 22px;
+  text-align: center;
+  letter-spacing: 0;
+  font-size: 1.5rem; }

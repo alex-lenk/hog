@@ -23,4 +23,25 @@ $(document).ready(function () {
         }
     );
 
+    /* BEGIN добавление класса input полям, если они были заполнены пользователем */
+
+    var uiField = $(".ui-field"),
+        fieldFilled = "field-filled";
+
+    uiField.change(function () {
+        if ($(this).val().trim().length) {
+            $(this).parent().addClass(fieldFilled);
+        } else {
+            $(this).parent().removeClass(fieldFilled);
+        }
+    });
+
+    uiField.each(function () {
+        if (this.value !== "") {
+            $(this).parent().addClass(fieldFilled);
+        }
+    });
+
+    /* END */
+
 });
