@@ -793,3 +793,11 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   text-align: center;
   letter-spacing: 0;
   font-size: 1.5rem; }
+
+/**/
+.inner-slide img {
+  max-width: 123px; }
+
+#mycarousel {
+  width: 595px;
+  height: 93px; }

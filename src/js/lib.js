@@ -3,7 +3,7 @@
  * Content of libraries
  * 1.   smoothscroll.js
  * 2.   svgxuse.min.js
- * 3.   click-scroll.js
+ * 3.   jquery.everslider.min.js
  *
  *
  * 4.   swiper.min.js
@@ -21,8 +21,8 @@
 /* 2. svgxuse.min.js */
 //= lib/svgxuse.min.js
 
-/* 3. jquery.stickymenu.js */
-// = lib/click-scroll.js
+/* 3. jquery.everslider.min.js */
+//= lib/jquery.everslider.min.js
 
 
 /* 3. jquery.fullPage.js */

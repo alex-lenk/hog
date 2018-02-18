@@ -1344,7 +1344,7 @@ li.fancybox-thumbs-loading {
 
 /* Preload */
 .everslider {
-  background: url(../images/preload.gif) no-repeat center; }
+  background: url(../img/carousel/preload.gif) no-repeat center; }
 
 .everslider.es-slides-ready {
   background: none; }
@@ -1382,16 +1382,16 @@ li.fancybox-thumbs-loading {
   text-indent: -9999px; }
 
 .es-navigation .es-prev span {
-  background: url(../images/arrows.png) no-repeat 0 0; }
+  background: url(../img/carousel/arrows.png) no-repeat 0 0; }
 
 .es-navigation .es-next span {
-  background: url(../images/arrows.png) no-repeat -20px 0; }
+  background: url(../img/carousel/arrows.png) no-repeat -20px 0; }
 
 .es-navigation .es-prev span.alt-arrow {
-  background: url(../images/arrows.png) no-repeat 0 -20px; }
+  background: url(../img/carousel/arrows.png) no-repeat 0 -20px; }
 
 .es-navigation .es-next span.alt-arrow {
-  background: url(../images/arrows.png) no-repeat -20px -20px; }
+  background: url(../img/carousel/arrows.png) no-repeat -20px -20px; }
 
 /* Pagination */
 .es-pagination {
@@ -1406,12 +1406,12 @@ li.fancybox-thumbs-loading {
   width: 13px;
   height: 13px;
   overflow: hidden;
-  background: url(../images/bullets.png) no-repeat 0 0;
+  background: url(../img/carousel/bullets.png) no-repeat 0 0;
   margin: 0 5px 0;
   text-indent: -9999px; }
 
 .es-pagination .es-active {
-  background: url(../images/bullets.png) no-repeat -13px 0; }
+  background: url(../img/carousel/bullets.png) no-repeat -13px 0; }
 
 /* Ticker */
 .es-ticker {
@@ -1431,37 +1431,36 @@ li.fancybox-thumbs-loading {
   text-indent: -9999px; }
 
 .es-ticker .es-play span {
-  background: url(../images/ticker.png) no-repeat 0 0; }
+  background: url(../img/carousel/ticker.png) no-repeat 0 0; }
 
 .es-ticker .es-pause span {
-  background: url(../images/ticker.png) no-repeat -20px 0; }
+  background: url(../img/carousel/ticker.png) no-repeat -20px 0; }
 
 /* Retina */
 @media only screen and (-webkit-min-device-pixel-ratio: 1.5) {
   /* Navigation */
   .es-navigation .es-prev span {
-    background: url(../images/arrows@2x.png) no-repeat 0 0;
+    background: url(../img/carousel/arrows@2x.png) no-repeat 0 0;
     background-size: 40px 40px; }
   .es-navigation .es-next span {
-    background: url(../images/arrows@2x.png) no-repeat -20px 0;
+    background: url(../img/carousel/arrows@2x.png) no-repeat -20px 0;
     background-size: 40px 40px; }
   /* Pagination */
   .es-pagination a {
-    background: url(../images/bullets@2x.png) no-repeat 0 0;
+    background: url(../img/carousel/bullets@2x.png) no-repeat 0 0;
     background-size: 26px 13px; }
   .es-pagination a.es-active {
-    background: url(../images/bullets@2x.png) no-repeat -13px 0;
+    background: url(../img/carousel/bullets@2x.png) no-repeat -13px 0;
     background-size: 26px 13px; }
   /* Ticker */
   .es-ticker .es-play span {
-    background: url(../images/ticker@2x.png) no-repeat 0 0;
+    background: url(../img/carousel/ticker@2x.png) no-repeat 0 0;
     background-size: 40px 20px; }
   .es-ticker .es-pause span {
-    background: url(../images/ticker@2x.png) no-repeat -20px 0;
+    background: url(../img/carousel/ticker@2x.png) no-repeat -20px 0;
     background-size: 40px 20px; } }
 
 /*
-
 @import "../../bower_components/swiper/dist/css/swiper.min";
 
 @import "lib/jquery.formstyler.theme";

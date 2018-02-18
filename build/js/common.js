@@ -44,4 +44,22 @@ $(document).ready(function () {
 
     /* END */
 
+    $(document).ready(function(){
+        $('#mycarousel').everslider({
+            mode: 'carousel',
+            moveSlides: 1,
+            slideEasing: 'easeInOutCubic',
+            slideDuration: 700,
+            navigation: true,
+            keyboard: true,
+            nextNav: '<span class="alt-arrow">Next</span>',
+            prevNav: '<span class="alt-arrow">Next</span>',
+            ticker: true,
+            tickerAutoStart: true,
+            tickerHover: true,
+            tickerTimeout: 2000,
+            itemWidth: 123
+        });
+    });
+
 });
