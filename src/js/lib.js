@@ -45,4 +45,4 @@
 //= ../../bower_components/fancybox/dist/jquery.fancybox.min.js
 
 /* 8. bootstrap.min.js */
-//= lib/bootstrap/bootstrap.min.js
+//= lib/bootstrap.min.js

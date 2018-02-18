@@ -13,14 +13,14 @@
       opacity: .45; }
   .header-container, .header-panel {
     position: static; }
-  .logo-hog {
+  .header .logo-hog {
     width: 100%;
     top: 53px;
     left: 0;
     position: fixed;
     z-index: 56;
     text-align: center;
-    font-size: 31px; }
+    font-size: 1.9375rem; }
   .header-logo {
     width: 196px; }
   .header-menu {
@@ -63,7 +63,7 @@
       height: 18px;
       fill: #fff; }
   .header::before,
-  .logo-hog,
+  .header .logo-hog,
   .header-menu {
     transition: transform .7s ease;
     will-change: transform;
@@ -71,7 +71,7 @@
     transform: translateX(-100%); }
   .menu-panel-opened .close-menu,
   .menu-panel-opened .header::before,
-  .menu-panel-opened .logo-hog,
+  .menu-panel-opened .header .logo-hog,
   .menu-panel-opened .header-menu {
     -ms-transform: translateX(0);
     transform: translateX(0); }
@@ -112,10 +112,12 @@
 
 @media (max-width: 719px) {
   .header {
-    height: calc(100vh - 75px); }
+    height: calc(100vh - 75px);
+    position: relative; }
   .header-container::before {
     width: 226px; }
   .header-content {
+    padding-bottom: 150px;
     position: relative; }
   .header-logo {
     width: 185px; }

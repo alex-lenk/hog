@@ -17,16 +17,10 @@ $(document).ready(function () {
     var elementBody = $('body'),
         menuPanelOpened = 'menu-panel-opened';
 
-    $('.open-menu').click(
+    $('.open-menu, .close-menu').click(
         function () {
             elementBody.toggleClass(menuPanelOpened);
         }
     );
-    $('.close-menu').click(
-        function () {
-            elementBody.toggleClass(menuPanelOpened);
-        }
-    );
-
 
 });

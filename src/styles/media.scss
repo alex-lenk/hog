@@ -32,14 +32,14 @@
     .header-container, .header-panel {
         position: static;
     }
-    .logo-hog {
+    .header .logo-hog {
         width: 100%;
         top: 53px;
         left: 0;
         position: fixed;
         z-index: 56;
         text-align: center;
-        font-size: 31px;
+        @include font-size(31px);
     }
     .header-logo {
         width: 196px;
@@ -86,7 +86,7 @@
     }
     
     .header::before,
-    .logo-hog,
+    .header .logo-hog,
     .header-menu {
         transition: transform .7s ease;
         will-change: transform;
@@ -95,7 +95,7 @@
     .menu-panel-opened {
         .close-menu,
         .header::before,
-        .logo-hog,
+        .header .logo-hog,
         .header-menu {
             transform: translateX(0);
         }
@@ -152,11 +152,13 @@
 @media (max-width: 719px) {
     .header {
         height: calc(100vh - 75px);
+        position: relative;
     }
     .header-container::before {
         width: 226px;
     }
     .header-content {
+        padding-bottom: 150px;
         position: relative;
     }
     .header-logo {
