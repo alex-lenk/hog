@@ -44,22 +44,27 @@ $(document).ready(function () {
 
     /* END */
 
-    $(document).ready(function(){
-        $('#mycarousel').everslider({
-            mode: 'carousel',
-            moveSlides: 1,
-            slideEasing: 'easeInOutCubic',
-            slideDuration: 700,
-            navigation: true,
-            keyboard: true,
-            nextNav: '<span class="alt-arrow">Next</span>',
-            prevNav: '<span class="alt-arrow">Next</span>',
-            ticker: true,
-            tickerAutoStart: true,
-            tickerHover: true,
-            tickerTimeout: 2000,
-            itemWidth: 123
-        });
-    });
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        responsiveClass:true,
+        autoWidth:true,
+        items:4,
+        responsive:{
+            0:{
+                items:1,
+                nav:true
+            },
+            600:{
+                items:3,
+                nav:false
+            },
+            1000:{
+                items:4,
+                nav:true,
+                loop:true
+            }
+        }
+    })
 
 });

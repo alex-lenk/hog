@@ -25,8 +25,8 @@
 //= lib/jquery.everslider.min.js
 
 
-/* 3. jquery.fullPage.js */
-// = ../../bower_components/fullPage.js/dist/jquery.fullpage.min.js
+/* 3. owl.carousel.min.js */
+//= ../../bower_components/owl.carousel/dist/owl.carousel.min.js
 
 
 /* 4. swiper.min.js */

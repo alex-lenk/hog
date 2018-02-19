@@ -203,7 +203,7 @@
     width: 392px;
     margin-left: 60px;
     padding: 37px 30px 30px;
-    float: right;
+    flex: none;
     background-color: rgba(#171817, .7);
 }
 
@@ -216,13 +216,33 @@
     @include font-size(24px)
 }
 
-/**/
-
-.inner-slide img {
-    max-width: 123px;
+.panel-flex {
+    display: flex;
+}
+.panel-flex__left {
+    overflow: hidden;
+    flex: 1;
 }
 
-#mycarousel {
-    width: 595px;
-    height: 93px;
+/**/
+.owl-carousel {
+    padding: 0 40px;
+}
+.owl-carousel img {
+    max-width: 125px;
+}
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+    height: 100%;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    background-color: #fff;
+}
+.owl-carousel .owl-prev {
+    left: 0;
+
+}
+.owl-carousel .owl-next {
+    right: 0;
 }
