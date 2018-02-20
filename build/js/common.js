@@ -45,11 +45,12 @@ $(document).ready(function () {
     /* END */
 
     $('.owl-carousel').owlCarousel({
-        loop:true,
+        loop: false,
         margin:10,
         responsiveClass:true,
         autoWidth:true,
         items:4,
+        navText:[ '<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>', '<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>' ],
         responsive:{
             0:{
                 items:1,
@@ -61,8 +62,7 @@ $(document).ready(function () {
             },
             1000:{
                 items:4,
-                nav:true,
-                loop:true
+                nav:true
             }
         }
     })

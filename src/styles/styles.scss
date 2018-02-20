@@ -226,23 +226,45 @@
 
 /**/
 .owl-carousel {
-    padding: 0 40px;
+    width: 97%;
+    padding: 0 30px;
 }
 .owl-carousel img {
     max-width: 125px;
 }
-.owl-carousel .owl-prev,
-.owl-carousel .owl-next {
-    height: 100%;
-    width: 20px;
-    position: absolute;
-    top: 0;
-    background-color: #fff;
-}
-.owl-carousel .owl-prev {
-    left: 0;
-
-}
-.owl-carousel .owl-next {
-    right: 0;
+.owl-carousel {
+    .owl-prev, .owl-next {
+        &:not(.disabled) {
+            background-color: #fff;
+            .arrow {
+                fill: $colorOrange;
+            }
+        }
+        height: 100%;
+        width: 20px;
+        position: absolute;
+        top: 0;
+        background-color: #222422;
+        .arrow {
+            width: 10px;
+            height: 10px;
+            fill: #A0A0A0;
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            margin-top: -5px;
+        }
+        &.disabled {
+            cursor: default;
+        }
+    }
+    .owl-prev {
+        left: 0;
+        .arrow {
+            transform: rotate(180deg);
+        }
+    }
+    .owl-next {
+        right: 0;
+    }
 }

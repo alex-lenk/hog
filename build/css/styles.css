@@ -806,21 +806,38 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 /**/
 .owl-carousel {
-  padding: 0 40px; }
+  width: 97%;
+  padding: 0 30px; }
 
 .owl-carousel img {
   max-width: 125px; }
 
-.owl-carousel .owl-prev,
-.owl-carousel .owl-next {
+.owl-carousel .owl-prev, .owl-carousel .owl-next {
   height: 100%;
   width: 20px;
   position: absolute;
   top: 0;
-  background-color: #fff; }
+  background-color: #222422; }
+  .owl-carousel .owl-prev:not(.disabled), .owl-carousel .owl-next:not(.disabled) {
+    background-color: #fff; }
+    .owl-carousel .owl-prev:not(.disabled) .arrow, .owl-carousel .owl-next:not(.disabled) .arrow {
+      fill: #EE7D00; }
+  .owl-carousel .owl-prev .arrow, .owl-carousel .owl-next .arrow {
+    width: 10px;
+    height: 10px;
+    fill: #A0A0A0;
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    margin-top: -5px; }
+  .owl-carousel .owl-prev.disabled, .owl-carousel .owl-next.disabled {
+    cursor: default; }
 
 .owl-carousel .owl-prev {
   left: 0; }
+  .owl-carousel .owl-prev .arrow {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
 
 .owl-carousel .owl-next {
   right: 0; }
