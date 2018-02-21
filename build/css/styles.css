@@ -653,32 +653,32 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   background: url(../img/bg/program-event-bg.png) no-repeat top center; }
 
 .tab-date {
-  position: relative;
   line-height: 1;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-pack: end;
   justify-content: flex-end; }
-  .tab-date::before {
-    width: 1px;
-    height: 26px;
-    top: 1px;
-    left: 50%;
-    margin-left: -1px;
-    position: absolute;
-    background-color: #979797;
-    content: ''; }
   .tab-date li {
+    position: relative;
     padding-bottom: 5px;
     border-bottom: 1px solid transparent;
     cursor: pointer;
     transition: color 0.4s ease; }
+    .tab-date li::before {
+      height: 24px;
+      top: 4px;
+      right: -16px;
+      position: absolute;
+      background-color: #979797;
+      content: ''; }
     .tab-date li:not(.active) {
       color: #A0A0A0; }
       .tab-date li:not(.active):hover {
         color: #fff; }
-    .tab-date li:last-child {
-      margin-left: 45px; }
+    .tab-date li:not(:last-child) {
+      margin-right: 32px; }
+      .tab-date li:not(:last-child)::before {
+        width: 1px; }
   .tab-date .active {
     border-bottom-color: #EE7D00; }
 

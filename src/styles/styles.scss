@@ -64,33 +64,34 @@
 }
 
 .tab-date {
-    position: relative;
     line-height: 1;
     display: inline-flex;
     justify-content: flex-end;
-    &::before {
-        width: 1px;
-        height: 26px;
-        top: 1px;
-        left: 50%;
-        margin-left: -1px;
-        position: absolute;
-        background-color: #979797;
-        content: '';
-    }
     li {
+        position: relative;
         padding-bottom: 5px;
         border-bottom: 1px solid transparent;
         cursor: pointer;
         transition: color 0.4s ease;
+        &::before {
+            height: 24px;
+            top: 4px;
+            right: -16px;
+            position: absolute;
+          background-color: #979797;
+            content: '';
+        }
         &:not(.active) {
             color: #A0A0A0;
             &:hover {
                 color: #fff;
             }
         }
-        &:last-child {
-            margin-left: 45px;
+        &:not(:last-child) {
+            margin-right: 32px;
+            &::before {
+                width: 1px;
+            }
         }
     }
     .active {
