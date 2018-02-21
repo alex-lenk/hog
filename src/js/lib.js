@@ -21,9 +21,6 @@
 /* 2. svgxuse.min.js */
 //= lib/svgxuse.min.js
 
-/* 3. jquery.everslider.min.js */
-//= lib/jquery.everslider.min.js
-
 
 /* 3. owl.carousel.min.js */
 //= ../../bower_components/owl.carousel/dist/owl.carousel.min.js
@@ -35,10 +32,6 @@
 
 /* 5. jquery.formstyler.min.js */
 // = lib/jquery.formstyler.min.js
-
-
-/* 6. isotope.pkgd.min.js */
-// = ../../bower_components/isotope-layout/dist/isotope.pkgd.min.js
 
 
 /* 7. jquery.fancybox.min.js */

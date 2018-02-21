@@ -817,11 +817,16 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   width: 20px;
   position: absolute;
   top: 0;
-  background-color: #222422; }
+  background-color: #222422;
+  transition: all 0.4s ease; }
   .owl-carousel .owl-prev:not(.disabled), .owl-carousel .owl-next:not(.disabled) {
     background-color: #fff; }
     .owl-carousel .owl-prev:not(.disabled) .arrow, .owl-carousel .owl-next:not(.disabled) .arrow {
       fill: #EE7D00; }
+    .owl-carousel .owl-prev:not(.disabled):hover, .owl-carousel .owl-next:not(.disabled):hover {
+      background-color: #EE7D00; }
+      .owl-carousel .owl-prev:not(.disabled):hover .arrow, .owl-carousel .owl-next:not(.disabled):hover .arrow {
+        fill: #fff; }
   .owl-carousel .owl-prev .arrow, .owl-carousel .owl-next .arrow {
     width: 10px;
     height: 10px;
@@ -829,7 +834,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     position: absolute;
     top: 50%;
     left: 5px;
-    margin-top: -5px; }
+    margin-top: -5px;
+    transition: all 0.4s ease; }
   .owl-carousel .owl-prev.disabled, .owl-carousel .owl-next.disabled {
     cursor: default; }
 
@@ -841,3 +847,36 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 .owl-carousel .owl-next {
   right: 0; }
+
+.overflow-show {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden; }
+  .overflow-show::before {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    z-index: 5;
+    background-color: rgba(0, 0, 0, 0.64);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    content: ''; }
+  .overflow-show .view {
+    width: 32px;
+    height: 32px;
+    margin-top: -16px;
+    margin-left: -16px;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    z-index: 7;
+    fill: #fff;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.4s ease; }
+  .overflow-show:hover::before,
+  .overflow-show:hover .view {
+    opacity: 1; }
