@@ -1,0 +1,33 @@
+.section-block__inner {
+    padding-top: 130px;
+}
+
+.section-title {
+    padding-left: 96px;
+    line-height: 1;
+    position: relative;
+    color: $colorOrange;
+    &::before {
+        width: 68px;
+        height: 2px;
+        background-color: $colorOrange;
+        top: 50%;
+        left: 0;
+        position: absolute;
+        transform: translateY(-50%);
+        content: '';
+    }
+}
+
+.section-title__color {
+    color: #fff;
+}
+
+.section-block__header {
+    margin-bottom: 60px;
+}
+
+.section-block__header-right {
+    padding-top: 6px;
+    text-align: right;
+}
