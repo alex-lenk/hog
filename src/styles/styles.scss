@@ -15,40 +15,16 @@
 @import "blocks/news-item";
 @import "blocks/pagination";
 
-.owl-theme {
-    padding: 0 30px;
-    img {
-        max-width: 125px;
-    }
+.owl-carousel {
     .owl-prev,
     .owl-next {
+        .arrow {
+            fill: #A0A0A0;
+        }
         &:not(.disabled) {
-            background-color: #fff;
             .arrow {
                 fill: $colorOrange;
             }
-            &:hover {
-                background-color: $colorOrange;
-                .arrow {
-                    fill: #fff;
-                }
-            }
-        }
-        height: 100%;
-        width: 20px;
-        position: absolute;
-        top: 0;
-        background-color: #222422;
-        transition: all 0.4s ease;
-        .arrow {
-            width: 10px;
-            height: 10px;
-            fill: #A0A0A0;
-            position: absolute;
-            top: 50%;
-            left: 5px;
-            margin-top: -5px;
-            transition: all 0.4s ease;
         }
         &.disabled {
             cursor: default;
@@ -65,6 +41,40 @@
     }
 }
 
+.genera-carousel {
+    padding: 0 30px;
+    img {
+        max-width: 125px;
+    }
+    .owl-prev,
+    .owl-next {
+        &:not(.disabled) {
+            background-color: #fff;
+            &:hover {
+                background-color: $colorOrange;
+                .arrow {
+                    fill: #fff;
+                }
+            }
+        }
+        height: 100%;
+        width: 20px;
+        position: absolute;
+        top: 0;
+        background-color: #222422;
+        transition: all 0.4s ease;
+        .arrow {
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            top: 50%;
+            left: 5px;
+            margin-top: -5px;
+            transition: all 0.4s ease;
+        }
+    }
+}
+
 .program-event {
     background: url(../img/bg/program-event-bg.png) no-repeat top center;
 }
@@ -75,4 +85,24 @@
 
 .press-about {
     background: url(../img/bg/press-bg.png) no-repeat center top;
+}
+
+.footer {
+    background-color: #171817;
+    color: #C6C6C6;
+    @include font-size(15px);
+}
+
+.footer-wrap {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.developer {
+    margin-left: auto;
+}
+
+.partner-carousel {
 }

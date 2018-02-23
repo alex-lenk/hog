@@ -967,50 +967,57 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 .pagination-next .arrow {
   margin-left: 16px; }
 
-.owl-theme {
+.owl-carousel .owl-prev .arrow,
+.owl-carousel .owl-next .arrow {
+  fill: #A0A0A0; }
+
+.owl-carousel .owl-prev:not(.disabled) .arrow,
+.owl-carousel .owl-next:not(.disabled) .arrow {
+  fill: #EE7D00; }
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  cursor: default; }
+
+.owl-carousel .owl-prev {
+  left: 0; }
+  .owl-carousel .owl-prev .arrow {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+
+.owl-carousel .owl-next {
+  right: 0; }
+
+.genera-carousel {
   padding: 0 30px; }
-  .owl-theme img {
+  .genera-carousel img {
     max-width: 125px; }
-  .owl-theme .owl-prev,
-  .owl-theme .owl-next {
+  .genera-carousel .owl-prev,
+  .genera-carousel .owl-next {
     height: 100%;
     width: 20px;
     position: absolute;
     top: 0;
     background-color: #222422;
     transition: all 0.4s ease; }
-    .owl-theme .owl-prev:not(.disabled),
-    .owl-theme .owl-next:not(.disabled) {
+    .genera-carousel .owl-prev:not(.disabled),
+    .genera-carousel .owl-next:not(.disabled) {
       background-color: #fff; }
-      .owl-theme .owl-prev:not(.disabled) .arrow,
-      .owl-theme .owl-next:not(.disabled) .arrow {
-        fill: #EE7D00; }
-      .owl-theme .owl-prev:not(.disabled):hover,
-      .owl-theme .owl-next:not(.disabled):hover {
+      .genera-carousel .owl-prev:not(.disabled):hover,
+      .genera-carousel .owl-next:not(.disabled):hover {
         background-color: #EE7D00; }
-        .owl-theme .owl-prev:not(.disabled):hover .arrow,
-        .owl-theme .owl-next:not(.disabled):hover .arrow {
+        .genera-carousel .owl-prev:not(.disabled):hover .arrow,
+        .genera-carousel .owl-next:not(.disabled):hover .arrow {
           fill: #fff; }
-    .owl-theme .owl-prev .arrow,
-    .owl-theme .owl-next .arrow {
+    .genera-carousel .owl-prev .arrow,
+    .genera-carousel .owl-next .arrow {
       width: 10px;
       height: 10px;
-      fill: #A0A0A0;
       position: absolute;
       top: 50%;
       left: 5px;
       margin-top: -5px;
       transition: all 0.4s ease; }
-    .owl-theme .owl-prev.disabled,
-    .owl-theme .owl-next.disabled {
-      cursor: default; }
-  .owl-theme .owl-prev {
-    left: 0; }
-    .owl-theme .owl-prev .arrow {
-      -ms-transform: rotate(180deg);
-      transform: rotate(180deg); }
-  .owl-theme .owl-next {
-    right: 0; }
 
 .program-event {
   background: url(../img/bg/program-event-bg.png) no-repeat top center; }
@@ -1020,3 +1027,19 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 .press-about {
   background: url(../img/bg/press-bg.png) no-repeat center top; }
+
+.footer {
+  background-color: #171817;
+  color: #C6C6C6;
+  font-size: 0.9375rem; }
+
+.footer-wrap {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.developer {
+  margin-left: auto; }
