@@ -46,25 +46,24 @@ $(document).ready(function () {
 
     $('.owl-carousel').owlCarousel({
         loop: false,
-        margin:10,
-        responsiveClass:true,
-        autoWidth:true,
-        items:4,
-        navText:[ '<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>', '<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>' ],
-        responsive:{
-            0:{
-                items:1,
-                nav:true
+        margin: 10,
+        responsiveClass: true,
+        navText: ['<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>', '<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>'],
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
             },
-            600:{
-                items:3,
-                nav:false
+            600: {
+                items: 3,
+                nav: false
             },
-            1000:{
-                items:4,
-                nav:true
+            1000: {
+                items: 4,
+                nav: true
             }
         }
-    })
+    });
+
 
 });
