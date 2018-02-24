@@ -1,6 +1,5 @@
 $(document).ready(function () {
-
-// Исправление бага в IE на телефонах - copyright 2014-2017 The Bootstrap Authors
+    /* BEGIN: Исправление бага в IE на телефонах - copyright 2014-2017 The Bootstrap Authors */
 
     if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
         var msViewportStyle = document.createElement('style');
@@ -14,6 +13,9 @@ $(document).ready(function () {
 
     /* END */
 
+
+    /* BEGIN: Открытие и закрытие меню на планшете и мобильных устройствах */
+
     var elementBody = $('body'),
         menuPanelOpened = 'menu-panel-opened';
 
@@ -23,7 +25,10 @@ $(document).ready(function () {
         }
     );
 
-    /* BEGIN добавление класса input полям, если они были заполнены пользователем */
+    /* END */
+
+
+    /* BEGIN: добавление класса input полям, если они были заполнены пользователем */
 
     var uiField = $(".ui-field"),
         fieldFilled = "field-filled";
@@ -43,6 +48,9 @@ $(document).ready(function () {
     });
 
     /* END */
+
+
+    /* BEGIN: Инициализация карусели */
 
     $('.excursions-city__carousel').owlCarousel({
         loop: false,
@@ -65,6 +73,10 @@ $(document).ready(function () {
         }
     });
 
+    /* END */
+
+
+    /* BEGIN: Инициализация карусели */
     $('.partner-carousel').owlCarousel({
         loop: false,
         margin: 40,
@@ -87,6 +99,20 @@ $(document).ready(function () {
             }
         }
     });
+
+    /* END */
+
+
+    /* BEGIN: Этот кусок кода тестовый, для показа, его нужно удалить после интеграции на сайт */
+
+    $('.gallery-albums .gallery-events__item').click(
+        function () {
+            $('.gallery-albums').fadeOut();
+            $('.gallery-photos').fadeIn();
+        }
+    );
+
+    /* END */
 
 
 });
