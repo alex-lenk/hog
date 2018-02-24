@@ -105,10 +105,20 @@ $(document).ready(function () {
 
     /* BEGIN: Этот кусок кода тестовый, для показа, его нужно удалить после интеграции на сайт */
 
+    var galleryAlbums = $('.gallery-albums'),
+        galleryPhotos = $('.gallery-photos');
+
     $('.gallery-albums .gallery-events__item').click(
         function () {
-            $('.gallery-albums').fadeOut();
-            $('.gallery-photos').fadeIn();
+            galleryAlbums.fadeOut();
+            galleryPhotos.fadeIn();
+        }
+    );
+
+    $('.gallery-photos .section-title').click(
+        function () {
+            galleryAlbums.fadeIn();
+            galleryPhotos.fadeOut();
         }
     );
 
