@@ -413,6 +413,59 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   .overflow-show:hover .view {
     opacity: 1; }
 
+/*****************************************/
+.owl-carousel .arrow {
+  width: 10px;
+  height: 10px;
+  fill: #A0A0A0; }
+
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+  position: absolute;
+  transition: all 0.4s ease; }
+  .owl-carousel .owl-prev:not(.disabled) .arrow,
+  .owl-carousel .owl-next:not(.disabled) .arrow {
+    fill: #EE7D00; }
+  .owl-carousel .owl-prev.disabled,
+  .owl-carousel .owl-next.disabled {
+    cursor: default; }
+
+.owl-carousel .owl-prev {
+  left: 0; }
+  .owl-carousel .owl-prev .arrow {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg); }
+
+.owl-carousel .owl-next {
+  right: 0; }
+
+.genera-carousel {
+  padding-left: 30px;
+  padding-right: 30px; }
+  .genera-carousel img {
+    max-width: 125px; }
+  .genera-carousel .owl-prev,
+  .genera-carousel .owl-next {
+    height: 100%;
+    width: 20px;
+    top: 0;
+    background-color: #222422; }
+    .genera-carousel .owl-prev:not(.disabled),
+    .genera-carousel .owl-next:not(.disabled) {
+      background-color: #fff; }
+      .genera-carousel .owl-prev:not(.disabled):hover,
+      .genera-carousel .owl-next:not(.disabled):hover {
+        background-color: #EE7D00; }
+        .genera-carousel .owl-prev:not(.disabled):hover .arrow,
+        .genera-carousel .owl-next:not(.disabled):hover .arrow {
+          fill: #fff; }
+  .genera-carousel .arrow {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    margin-top: -5px;
+    transition: all 0.4s ease; }
+
 .header {
   height: 100vh;
   background: url(../img/bg/header-bg.jpg) no-repeat center;
@@ -644,6 +697,9 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     content: '';
     background-color: #EE7D00;
     animation: spin 1.5s 1000 linear; }
+
+.section-block {
+  margin-bottom: 30px; }
 
 .section-block__inner {
   padding-top: 130px; }
@@ -996,66 +1052,6 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     width: 20px;
     height: 20px; }
 
-.owl-carousel .arrow {
-  width: 10px;
-  height: 10px;
-  fill: #A0A0A0; }
-
-.owl-carousel .owl-prev,
-.owl-carousel .owl-next {
-  position: absolute;
-  transition: all 0.4s ease; }
-  .owl-carousel .owl-prev:not(.disabled) .arrow,
-  .owl-carousel .owl-next:not(.disabled) .arrow {
-    fill: #EE7D00; }
-  .owl-carousel .owl-prev.disabled,
-  .owl-carousel .owl-next.disabled {
-    cursor: default; }
-
-.owl-carousel .owl-prev {
-  left: 0; }
-  .owl-carousel .owl-prev .arrow {
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg); }
-
-.owl-carousel .owl-next {
-  right: 0; }
-
-.genera-carousel {
-  padding: 0 30px; }
-  .genera-carousel img {
-    max-width: 125px; }
-  .genera-carousel .owl-prev,
-  .genera-carousel .owl-next {
-    height: 100%;
-    width: 20px;
-    top: 0;
-    background-color: #222422; }
-    .genera-carousel .owl-prev:not(.disabled),
-    .genera-carousel .owl-next:not(.disabled) {
-      background-color: #fff; }
-      .genera-carousel .owl-prev:not(.disabled):hover,
-      .genera-carousel .owl-next:not(.disabled):hover {
-        background-color: #EE7D00; }
-        .genera-carousel .owl-prev:not(.disabled):hover .arrow,
-        .genera-carousel .owl-next:not(.disabled):hover .arrow {
-          fill: #fff; }
-  .genera-carousel .arrow {
-    position: absolute;
-    top: 50%;
-    left: 5px;
-    margin-top: -5px;
-    transition: all 0.4s ease; }
-
-.program-event {
-  background: url(../img/bg/program-event-bg.png) no-repeat top center; }
-
-.excursions-city {
-  background: url(../img/bg/excursions-bg.png) no-repeat center top; }
-
-.press-about {
-  background: url(../img/bg/press-bg.png) no-repeat center top; }
-
 .footer {
   background-color: #171817;
   color: #C6C6C6;
@@ -1071,3 +1067,16 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 .developer {
   margin-left: auto; }
+
+.program-event {
+  background: url(../img/bg/program-event-bg.png) no-repeat top center; }
+
+.excursions-city {
+  background: url(../img/bg/excursions-bg.png) no-repeat center top; }
+
+.press-about {
+  margin-bottom: 150px;
+  background: url(../img/bg/press-bg.png) no-repeat center top; }
+
+.excursions-city__carousel {
+  padding-top: 10px; }

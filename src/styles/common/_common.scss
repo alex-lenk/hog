@@ -221,3 +221,64 @@ button, input, select, textarea {
         }
     }
 }
+
+/*****************************************/
+
+.owl-carousel {
+    .arrow {
+        width: 10px;
+        height: 10px;
+        fill: #A0A0A0;
+    }
+    .owl-prev,
+    .owl-next {
+        position: absolute;
+        transition: all 0.4s ease;
+        &:not(.disabled) .arrow {
+            fill: $colorOrange;
+        }
+        &.disabled {
+            cursor: default;
+        }
+    }
+    .owl-prev {
+        left: 0;
+        .arrow {
+            transform: rotate(180deg);
+        }
+    }
+    .owl-next {
+        right: 0;
+    }
+}
+
+.genera-carousel {
+    padding-left: 30px;
+    padding-right: 30px;
+    img {
+        max-width: 125px;
+    }
+    .owl-prev,
+    .owl-next {
+        &:not(.disabled) {
+            background-color: #fff;
+            &:hover {
+                background-color: $colorOrange;
+                .arrow {
+                    fill: #fff;
+                }
+            }
+        }
+        height: 100%;
+        width: 20px;
+        top: 0;
+        background-color: #222422;
+    }
+    .arrow {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        margin-top: -5px;
+        transition: all 0.4s ease;
+    }
+}
