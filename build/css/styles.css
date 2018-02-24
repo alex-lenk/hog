@@ -967,17 +967,50 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 .pagination-next .arrow {
   margin-left: 16px; }
 
-.owl-carousel .owl-prev .arrow,
-.owl-carousel .owl-next .arrow {
+.partner {
+  padding-top: 79px;
+  padding-bottom: 72px;
+  background-color: #fff; }
+
+.partner-carousel {
+  padding-left: 50px;
+  padding-right: 50px; }
+  .partner-carousel .item {
+    max-width: 200px;
+    height: 75px;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .partner-carousel .item img {
+      width: auto;
+      max-width: 100%;
+      max-height: 100%; }
+  .partner-carousel .owl-prev,
+  .partner-carousel .owl-next {
+    top: 50%;
+    margin-top: -10px; }
+  .partner-carousel .arrow {
+    width: 20px;
+    height: 20px; }
+
+.owl-carousel .arrow {
+  width: 10px;
+  height: 10px;
   fill: #A0A0A0; }
 
-.owl-carousel .owl-prev:not(.disabled) .arrow,
-.owl-carousel .owl-next:not(.disabled) .arrow {
-  fill: #EE7D00; }
-
-.owl-carousel .owl-prev.disabled,
-.owl-carousel .owl-next.disabled {
-  cursor: default; }
+.owl-carousel .owl-prev,
+.owl-carousel .owl-next {
+  position: absolute;
+  transition: all 0.4s ease; }
+  .owl-carousel .owl-prev:not(.disabled) .arrow,
+  .owl-carousel .owl-next:not(.disabled) .arrow {
+    fill: #EE7D00; }
+  .owl-carousel .owl-prev.disabled,
+  .owl-carousel .owl-next.disabled {
+    cursor: default; }
 
 .owl-carousel .owl-prev {
   left: 0; }
@@ -996,10 +1029,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   .genera-carousel .owl-next {
     height: 100%;
     width: 20px;
-    position: absolute;
     top: 0;
-    background-color: #222422;
-    transition: all 0.4s ease; }
+    background-color: #222422; }
     .genera-carousel .owl-prev:not(.disabled),
     .genera-carousel .owl-next:not(.disabled) {
       background-color: #fff; }
@@ -1009,15 +1040,12 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
         .genera-carousel .owl-prev:not(.disabled):hover .arrow,
         .genera-carousel .owl-next:not(.disabled):hover .arrow {
           fill: #fff; }
-    .genera-carousel .owl-prev .arrow,
-    .genera-carousel .owl-next .arrow {
-      width: 10px;
-      height: 10px;
-      position: absolute;
-      top: 50%;
-      left: 5px;
-      margin-top: -5px;
-      transition: all 0.4s ease; }
+  .genera-carousel .arrow {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    margin-top: -5px;
+    transition: all 0.4s ease; }
 
 .program-event {
   background: url(../img/bg/program-event-bg.png) no-repeat top center; }

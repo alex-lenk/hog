@@ -44,7 +44,7 @@ $(document).ready(function () {
 
     /* END */
 
-    $('.owl-carousel').owlCarousel({
+    $('.excursions-city__carousel').owlCarousel({
         loop: false,
         margin: 10,
         responsiveClass: true,
@@ -60,6 +60,29 @@ $(document).ready(function () {
             },
             1000: {
                 items: 4,
+                nav: true
+            }
+        }
+    });
+
+    $('.partner-carousel').owlCarousel({
+        loop: false,
+        margin: 40,
+        autoWidth: true,
+        items: 9,
+        responsiveClass: true,
+        navText: ['<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>', '<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>'],
+        responsive: {
+            0: {
+                items: 1,
+                nav: true
+            },
+            600: {
+                items: 3,
+                nav: false
+            },
+            1000: {
+                items: 9,
                 nav: true
             }
         }

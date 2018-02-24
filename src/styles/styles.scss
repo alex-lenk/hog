@@ -14,17 +14,20 @@
 @import "blocks/bid-form";
 @import "blocks/news-item";
 @import "blocks/pagination";
+@import "blocks/partner";
 
 .owl-carousel {
+    .arrow {
+        width: 10px;
+        height: 10px;
+        fill: #A0A0A0;
+    }
     .owl-prev,
     .owl-next {
-        .arrow {
-            fill: #A0A0A0;
-        }
-        &:not(.disabled) {
-            .arrow {
+        position: absolute;
+        transition: all 0.4s ease;
+        &:not(.disabled) .arrow {
                 fill: $colorOrange;
-            }
         }
         &.disabled {
             cursor: default;
@@ -59,19 +62,15 @@
         }
         height: 100%;
         width: 20px;
-        position: absolute;
         top: 0;
         background-color: #222422;
+    }
+    .arrow {
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        margin-top: -5px;
         transition: all 0.4s ease;
-        .arrow {
-            width: 10px;
-            height: 10px;
-            position: absolute;
-            top: 50%;
-            left: 5px;
-            margin-top: -5px;
-            transition: all 0.4s ease;
-        }
     }
 }
 
@@ -102,7 +101,4 @@
 
 .developer {
     margin-left: auto;
-}
-
-.partner-carousel {
 }
