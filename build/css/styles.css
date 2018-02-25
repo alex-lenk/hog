@@ -766,24 +766,20 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 .panel-collapse {
   background-color: rgba(23, 24, 23, 0.55); }
 
-.panel-body {
-  padding: 45px; }
-  .panel-body:after {
-    display: table;
-    clear: both;
-    content: ""; }
-  .panel-body .pull-right {
-    margin-left: 85px; }
-  .panel-body .pull-left {
-    margin-right: 85px; }
-  .panel-body a:hover svg {
-    fill: #fff; }
-  .panel-body .location {
-    width: 16px;
-    height: 16px;
-    margin-right: 6px;
-    fill: #EE7D00;
-    transition: fill 0.4s ease; }
+.panel-body:after {
+  display: table;
+  clear: both;
+  content: ""; }
+
+.panel-body a:hover svg {
+  fill: #fff; }
+
+.panel-body .location {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+  fill: #EE7D00;
+  transition: fill 0.4s ease; }
 
 .panel-body__head {
   margin-bottom: 20px;
@@ -810,9 +806,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 .tab-date {
   line-height: 1;
   display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-pack: end;
-  justify-content: flex-end; }
+  display: inline-flex; }
   .tab-date li {
     position: relative;
     padding-bottom: 5px;
@@ -830,10 +824,6 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
       color: #A0A0A0; }
       .tab-date li:not(.active):hover {
         color: #fff; }
-    .tab-date li:not(:last-child) {
-      margin-right: 32px; }
-      .tab-date li:not(:last-child)::before {
-        width: 1px; }
   .tab-date .active {
     border-bottom-color: #EE7D00; }
 

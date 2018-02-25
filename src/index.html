@@ -8,19 +8,25 @@
 <section id="section2" class="section-block program-event">
     <div class="section-block__inner container">
         <div class="section-block__header row">
-            <div class="col-md-9">
+            <div class="col-md-9 col-sm-7">
                 <h2 class="h1 section-title">Программа <span class="section-title__color">Мероприятия</span></h2>
             </div>
-            <div class="section-block__header-right col-md-3">
+            <div class="section-block__header-right col-md-3 col-sm-5">
                 <ul class="tab-date list-unstyled nav nav-tabs" role="tablist">
                     <li class="active" data-target="#section-tab-1" aria-controls="homsection-tab-1e" role="tab"
                         data-toggle="tab">
                         <span class="tab-date__number">29</span>
                         <span class="tab-date__month">апреля</span>
+                        <svg class="arrow">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
                     </li>
                     <li data-target="#section-tab-2" aria-controls="section-tab-2" role="tab" data-toggle="tab">
                         <span class="tab-date__number">30</span>
                         <span class="tab-date__month">апреля</span>
+                        <svg class="arrow">
+                            <use xlink:href="img/sprite.svg#arrow"></use>
+                        </svg>
                     </li>
                 </ul>
             </div>
@@ -47,8 +53,9 @@
                         <div id="collapse-1" class="panel-collapse collapse" role="tabpanel"
                              aria-labelledby="heading-1">
                             <div class="panel-body">
-                                <img src="img/example/img.jpg" srcset="img/example/img@2x.jpg 2x" alt=""
-                                     class="pull-left">
+                                <div class="pull-left">
+                                    <img src="img/example/img.jpg" srcset="img/example/img@2x.jpg 2x" alt="">
+                                </div>
 
                                 <p><a href="#" rel="nofollow" target="_blank">
                                     <svg class="location">
@@ -82,8 +89,9 @@
                         <div id="collapse-2" class="panel-collapse collapse in" role="tabpanel"
                              aria-labelledby="heading-2">
                             <div class="panel-body">
-                                <img src="img/example/img.jpg" srcset="img/example/img@2x.jpg 2x" alt=""
-                                     class="pull-right">
+                                <div class="pull-right">
+                                    <img src="img/example/img.jpg" srcset="img/example/img@2x.jpg 2x" alt="">
+                                </div>
 
                                 <p><a href="#" rel="nofollow" target="_blank">
                                     <svg class="location">
@@ -208,8 +216,9 @@
                         <div id="collapse1" class="panel-collapse collapse in" role="tabpanel"
                              aria-labelledby="heading1">
                             <div class="panel-body">
-                                <img src="img/example/img.jpg" srcset="img/example/img@2x.jpg 2x" alt=""
-                                     class="pull-right">
+                                <div class="pull-right">
+                                    <img src="img/example/img.jpg" srcset="img/example/img@2x.jpg 2x" alt="">
+                                </div>
 
                                 <p><a href="#" rel="nofollow" target="_blank">
                                     <svg class="location">
@@ -242,8 +251,9 @@
                         </div>
                         <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
                             <div class="panel-body">
-                                <img src="img/example/img.jpg" srcset="img/example/img@2x.jpg 2x" alt=""
-                                     class="pull-left">
+                                <div class="pull-left">
+                                    <img src="img/example/img.jpg" srcset="img/example/img@2x.jpg 2x" alt="">
+                                </div>
 
                                 <p><a href="#" rel="nofollow" target="_blank">
                                     <svg class="location">
@@ -349,8 +359,7 @@
     </div>
 </section>
 
-
-<section id="section3" class="excursions-city section-block">
+<section id="section3" class="hidden excursions-city section-block">
     <div class="section-block__inner container">
         <div class="section-block__header">
             <h2 class="h1 section-title">Экскурсии <span class="section-title__color">Минском</span></h2>
@@ -379,7 +388,9 @@
 
                 <div id="collapse-01" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading-01">
                     <div class="panel-body">
-                        <img src="img/example/img.jpg" srcset="img/example/img@2x.jpg 2x" alt="" class="pull-left">
+                        <div class="pull-left">
+                            <img src="img/example/img.jpg" srcset="img/example/img@2x.jpg 2x" alt="">
+                        </div>
 
                         <p><a href="#" rel="nofollow" target="_blank">
                             <svg class="location">
@@ -619,8 +630,7 @@
     </div>
 </section>
 
-
-<section id="section4" class="hotels section-block">
+<section id="section4" class="hidden hotels section-block">
     <div class="section-block__inner container">
         <div class="section-block__header">
             <h2 class="h1 section-title">Отели <span class="section-title__color">Минска</span></h2>
@@ -945,7 +955,7 @@
     </div>
 </section>
 
-<section id="section5" class="gallery-events section-block">
+<section id="section5" class="hidden gallery-events section-block">
     <div class="section-block__inner container">
         <div class="gallery-photos" style="display: none">
             <div class="section-block__header row">
@@ -1218,7 +1228,7 @@
     </div>
 </section>
 
-<section id="section6" class="press-about section-block">
+<section  id="section6" class="hidden press-about section-block">
     <div class="section-block__inner container">
         <div class="section-block__header row">
             <div class="col-md-9">
@@ -1349,7 +1359,7 @@
     </div>
 </section>
 
-<aside class="partner">
+<aside class="hidden partner">
     <div class="container">
         <div class="partner-carousel owl-carousel">
             <a href="#" class="item" target="_blank" rel="nofollow">
@@ -1389,7 +1399,7 @@
     </div>
 </aside>
 
-<footer class="footer">
+<footer class="hidden footer">
     <div class="footer-wrap container">
         <div class="">© 2011-2018. H.O.G. Rally Minsk. All rights Reserved.</div>
 

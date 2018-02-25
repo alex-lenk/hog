@@ -48,14 +48,7 @@
 }
 
 .panel-body {
-    padding: 45px;
     @include clearfix;
-    .pull-right {
-        margin-left: 85px;
-    }
-    .pull-left {
-        margin-right: 85px;
-    }
     a:hover svg {
         fill: #fff;
     }
@@ -96,7 +89,6 @@
 .tab-date {
     line-height: 1;
     display: inline-flex;
-    justify-content: flex-end;
     li {
         position: relative;
         padding-bottom: 5px;
@@ -115,12 +107,6 @@
             color: #A0A0A0;
             &:hover {
                 color: #fff;
-            }
-        }
-        &:not(:last-child) {
-            margin-right: 32px;
-            &::before {
-                width: 1px;
             }
         }
     }
