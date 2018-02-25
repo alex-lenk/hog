@@ -56,7 +56,8 @@ $(document).ready(function () {
         loop: false,
         margin: 10,
         responsiveClass: true,
-        navText: ['<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>', '<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>'],
+        navText: ['<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>',
+            '<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>'],
         responsive: {
             0: {
                 items: 1,
@@ -77,13 +78,15 @@ $(document).ready(function () {
 
 
     /* BEGIN: Инициализация карусели */
+
     $('.partner-carousel').owlCarousel({
         loop: false,
         margin: 40,
         autoWidth: true,
         items: 9,
         responsiveClass: true,
-        navText: ['<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>', '<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>'],
+        navText: ['<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>',
+            '<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>'],
         responsive: {
             0: {
                 items: 1,
@@ -99,6 +102,49 @@ $(document).ready(function () {
             }
         }
     });
+
+    /* END */
+
+
+    /* BEGIN: Инициализация слайдера и карусели */
+
+    $('.hotel-big').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: true,
+        infinite: false,
+        asNavFor: '.hotel-thrum'
+    });
+
+    $('.hotel-thrum').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        asNavFor: '.hotel-big',
+        dots: false,
+        focusOnSelect: true,
+        infinite: false,
+        prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg></button>',
+        nextArrow: '<button class="slick-next" aria-label="Next" type="button"><svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg></button>'
+    });
+
+
+    /* BEGIN: открытие и закрытие отеля */
+
+    var hotelsClass = $('.hotels'),
+        openHotel = 'open-hotel';
+
+    $('.hotel-item').click(
+        function () {
+            hotelsClass.addClass(openHotel);
+        }
+    );
+
+    $('.hotel-window__close').click(
+        function () {
+            hotelsClass.removeClass(openHotel);
+        }
+    );
 
     /* END */
 

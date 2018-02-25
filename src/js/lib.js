@@ -33,6 +33,8 @@
 /* 5. jquery.formstyler.min.js */
 // = lib/jquery.formstyler.min.js
 
+/* 6. slick.min.js */
+//= ../../bower_components/slick-carousel/slick/slick.min.js
 
 /* 7. jquery.fancybox.min.js */
 //= ../../bower_components/fancybox/dist/jquery.fancybox.min.js
