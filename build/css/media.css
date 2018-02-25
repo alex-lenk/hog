@@ -1,4 +1,6 @@
 @media (max-width: 959px) {
+  #section5 .section-block__header-right {
+    display: none; }
   .panel-flex {
     margin-bottom: 50px; }
   .panel-body {
