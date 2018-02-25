@@ -152,8 +152,8 @@
   .header-container {
     position: relative;
     z-index: 5; }
-  .header-panel {
-    margin-bottom: 165px; }
+  .header-wrap {
+    margin-top: 165px; }
   .header-menu {
     padding-top: 23px; }
   .close-menu {
@@ -194,8 +194,8 @@
     background-position: 0 -42px; }
   .header-container::before {
     width: 185px; }
-  .header-panel {
-    margin-bottom: 18vh; }
+  .header-wrap {
+    margin-top: 18vh; }
   .header-menu:first-of-type {
     max-width: 334px; }
   .header-menu:not(:first-of-type) {
@@ -208,5 +208,5 @@
     display: flex;
     -ms-flex-direction: column;
     flex-direction: column; }
-  .header-panel {
-    margin-bottom: auto; } }
+  .header-wrap {
+    margin-top: auto; } }

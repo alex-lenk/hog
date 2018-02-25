@@ -33,10 +33,13 @@
 .header-panel {
     z-index: 5;
     position: relative;
+    align-items: flex-start;
+}
+
+.header-panel__inner {
     line-height: 1;
     font-weight: 400;
     display: flex;
-    align-items: flex-start;
     @include font-size(16px);
 }
 
@@ -53,11 +56,15 @@
     &:not(:first-of-type) {
         margin-left: auto;
     }
+    .active {
+        color: $colorOrange;
+        border-bottom-color: $colorOrange;
+    }
 }
 
 .header-menu__point {
     border-bottom: 1px solid transparent;
-    &:not(.header-menu__active) {
+    &:not(.active) {
         color: #fff;
         &:hover {
             color: $colorOrange;
@@ -65,10 +72,6 @@
     }
 }
 
-.header-menu__active {
-    color: $colorOrange;
-    border-bottom-color: $colorOrange;
-}
 
 .header-menu__link {
     color: inherit;
