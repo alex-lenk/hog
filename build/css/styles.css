@@ -428,6 +428,17 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     margin-top: -5px;
     transition: all 0.4s ease; }
 
+.bid-form__close,
+.close-menu {
+  cursor: pointer; }
+  .bid-form__close .close,
+  .close-menu .close {
+    fill: #fff;
+    transition: fill 0.4s ease; }
+  .bid-form__close:hover .close,
+  .close-menu:hover .close {
+    fill: #EE7D00; }
+
 .header {
   height: 100vh;
   background: url(../img/bg/header-bg.jpg) no-repeat center;
@@ -743,8 +754,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
-  align-items: center;
-  font-size: 1.25rem; }
+  align-items: center; }
 
 .panel-heading__more {
   margin-left: auto; }
@@ -822,9 +832,6 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   font-size: 1.25rem; }
 
 .bid-form {
-  width: 392px;
-  margin-left: 60px;
-  padding: 37px 30px 30px;
   -ms-flex: none;
   flex: none;
   background-color: rgba(23, 24, 23, 0.7); }
@@ -1371,7 +1378,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   background: url(../img/bg/press-bg.png) no-repeat center top; }
 
 .excursions-city__carousel {
-  padding-top: 10px; }
+  border-top: 10px solid transparent; }
 
 .gallery-events {
   background: url(../img/bg/gallery-bg.png) no-repeat center top; }

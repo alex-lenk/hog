@@ -59,15 +59,11 @@ $(document).ready(function () {
         navText: ['<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>',
             '<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>'],
         responsive: {
-            0: {
-                items: 1,
-                nav: true
-            },
-            600: {
+            575: {
                 items: 3,
                 nav: false
             },
-            1000: {
+            576: {
                 items: 4,
                 nav: true
             }
@@ -149,6 +145,46 @@ $(document).ready(function () {
     /* END */
 
 
+    /* BEGIN: Add smooth scrolling to all links inside a navbar */
+
+    $(".header-menu__link").on('click', function (event) {
+
+        // Prevent default anchor click behavior
+        event.preventDefault();
+
+        // Store hash (#)
+        var hash = this.hash;
+
+        // Using jQuery's animate() method to add smooth page scroll
+        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
+        $('html, body').animate({
+            scrollTop: $(hash).offset().top
+        }, 800, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+        });
+    });
+
+    /* END */
+
+
+    /* BEGIN: */
+
+    $('.bid-form__send').click(
+        function () {
+            $(this).parent().addClass('form-opened');
+        }
+    );
+    $('.bid-form__close').click(
+        function () {
+            $('.panel-body').removeClass('form-opened');
+        }
+    );
+
+    /* END */
+
+
     /* BEGIN: Этот кусок кода тестовый, для показа, его нужно удалить после интеграции на сайт */
 
     var galleryAlbums = $('.gallery-albums'),
@@ -170,24 +206,4 @@ $(document).ready(function () {
 
     /* END */
 
-
-// Add smooth scrolling to all links inside a navbar
-    $(".header-menu__link").on('click', function (event) {
-
-        // Prevent default anchor click behavior
-        event.preventDefault();
-
-        // Store hash (#)
-        var hash = this.hash;
-
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area (the speed of the animation)
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 800, function () {
-
-            // Add hash (#) to URL when done scrolling (default click behavior)
-            window.location.hash = hash;
-        });
-    });
 });

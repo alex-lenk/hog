@@ -241,3 +241,15 @@ button, input, select, textarea {
         transition: all 0.4s ease;
     }
 }
+
+.bid-form__close,
+.close-menu {
+    cursor: pointer;
+    .close {
+        fill: #fff;
+        transition: fill 0.4s ease;
+    }
+    &:hover .close {
+        fill: $colorOrange;
+    }
+}

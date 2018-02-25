@@ -568,8 +568,7 @@
 </section>
 
 
-
-<section id="section3" class="hidden excursions-city section-block">
+<section id="section3" class="excursions-city section-block">
     <div class="section-block__inner container">
         <div class="section-block__header">
             <h2 class="h1 section-title">Экскурсии <span class="section-title__color">Минском</span></h2>
@@ -653,7 +652,13 @@
                                         </svg>
                                         Курган Славы
                                     </a>
-                                    <div class="panel-body__price">2,000₽ <span class="human">/ с чел.</span></div>
+                                    <div class="panel-body__price">
+                                        <svg class="user">
+                                            <use xlink:href="img/sprite.svg#user"></use>
+                                        </svg>
+
+                                        2,000₽ <span class="human">/ с чел.</span>
+                                    </div>
                                 </div>
 
                                 <p>
@@ -786,25 +791,36 @@
                                 </div>
                             </div>
 
-                            <form action="#" class="bid-form">
-                                <div class="bid-form__title">Подать Заявку</div>
-                                <div class="ui-group">
-                                    <input type="text" class="ui-field ui-placeholder" placeholder="ф.и.о.">
-                                </div>
-                                <div class="ui-group has-error">
-                                    <input type="tel" class="ui-field ui-placeholder" placeholder="Телефон">
-                                    <div class="has-error__text">Не заполнено поле!</div>
-                                </div>
-                                <div class="ui-group">
-                                    <input type="email" class="ui-field ui-placeholder" placeholder="Email"
-                                           value="www@leningrad.ru">
-                                </div>
-                                <div class="ui-group">
-                                    <textarea class="ui-field ui-placeholder" placeholder="Сообщение"></textarea>
-                                </div>
-                                <button class="btn btn-white">Отправить</button>
-                            </form>
+                            <div class="bid-form">
+                                <form action="#" class="bid-form__inner">
+                                    <div class="bid-form__title">
+                                        Подать Заявку
+                                        <div class="bid-form__close">
+                                            <svg class="close">
+                                                <use xlink:href="img/sprite.svg#close"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="ui-group">
+                                        <input type="text" class="ui-field ui-placeholder" placeholder="ф.и.о.">
+                                    </div>
+                                    <div class="ui-group has-error">
+                                        <input type="tel" class="ui-field ui-placeholder" placeholder="Телефон">
+                                        <div class="has-error__text">Не заполнено поле!</div>
+                                    </div>
+                                    <div class="ui-group">
+                                        <input type="email" class="ui-field ui-placeholder" placeholder="Email"
+                                               value="example@gmail.com">
+                                    </div>
+                                    <div class="ui-group">
+                                        <textarea class="ui-field ui-placeholder" placeholder="Сообщение"></textarea>
+                                    </div>
+                                    <button class="btn btn-white">Отправить</button>
+                                </form>
+                            </div>
                         </div>
+
+                        <button class="bid-form__send btn btn-white">Подать Заявку</button>
                     </div>
                 </div>
             </div>
@@ -848,6 +864,7 @@
         </div>
     </div>
 </section>
+
 
 <section id="section4" class="hidden hotels section-block">
     <div class="section-block__inner container">
@@ -1137,22 +1154,24 @@
                             </div>
                         </li>
                     </ul>
-                    <form action="#" class="bid-form">
-                        <div class="bid-form__title">Отправить Заявку</div>
-                        <div class="ui-group">
-                            <input type="text" class="ui-field ui-placeholder" placeholder="ф.и.о.">
-                        </div>
-                        <div class="ui-group">
-                            <input type="tel" class="ui-field ui-placeholder" placeholder="Телефон">
-                        </div>
-                        <div class="ui-group">
-                            <input type="email" class="ui-field ui-placeholder" placeholder="Email">
-                        </div>
-                        <div class="ui-group">
-                            <textarea class="ui-field ui-placeholder" placeholder="Сообщение"></textarea>
-                        </div>
-                        <button class="btn btn-white">Отправить</button>
-                    </form>
+                    <div class="bid-form">
+                        <form action="#" class="bid-form__inner">
+                            <div class="bid-form__title">Отправить Заявку</div>
+                            <div class="ui-group">
+                                <input type="text" class="ui-field ui-placeholder" placeholder="ф.и.о.">
+                            </div>
+                            <div class="ui-group">
+                                <input type="tel" class="ui-field ui-placeholder" placeholder="Телефон">
+                            </div>
+                            <div class="ui-group">
+                                <input type="email" class="ui-field ui-placeholder" placeholder="Email">
+                            </div>
+                            <div class="ui-group">
+                                <textarea class="ui-field ui-placeholder" placeholder="Сообщение"></textarea>
+                            </div>
+                            <button class="btn btn-white">Отправить</button>
+                        </form>
+                    </div>
                 </div>
 
 
@@ -1447,7 +1466,7 @@
     </div>
 </section>
 
-<section  id="section6" class="hidden press-about section-block">
+<section id="section6" class="hidden press-about section-block">
     <div class="section-block__inner container">
         <div class="section-block__header row">
             <div class="col-md-9">

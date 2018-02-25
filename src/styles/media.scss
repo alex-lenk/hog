@@ -8,6 +8,49 @@
 }
 
 @media (max-width: 959px) {
+    .panel-flex {
+        margin-bottom: 50px;
+    }
+    
+    .panel-body {
+        position: relative;
+    }
+    
+    .bid-form {
+        padding: 12% 21% 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 5;
+        background-color: #171817;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+    }
+    
+    .bid-form__title {
+        position: relative;
+    }
+    
+    .bid-form__close {
+        top: -3px;
+        right: -5px;
+        padding: 5px;
+        position: absolute;
+        z-index: 59;
+        .close {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    
+    .form-opened .bid-form {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    
     .section-block__header {
         align-items: center;
     }
@@ -154,7 +197,6 @@
         .close {
             width: 18px;
             height: 18px;
-            fill: #fff;
         }
     }
     
@@ -272,6 +314,10 @@
 }
 
 @media (max-width: 575px) {
+    .human {
+        display: none;
+    }
+    
     .section-block__header {
         margin-bottom: 26px;
     }
@@ -351,6 +397,10 @@
 }
 
 @media (min-width: 576px) {
+    .user {
+        display: none;
+    }
+    
     .panel-heading__time .clock {
         display: none;
     }
@@ -375,6 +425,21 @@
 }
 
 @media (min-width: 960px) {
+    .panel-heading__event {
+        @include font-size(20px);
+    }
+    
+    .bid-form {
+        width: 37%;
+        margin-left: 6%;
+        padding: 37px 30px 30px;
+    }
+    
+    .bid-form__close, .bid-form__send,
+    .close-menu, .open-menu {
+        display: none;
+    }
+    
     .tab-date {
         justify-content: flex-end;
         .arrow {
@@ -410,9 +475,6 @@
     .header-menu {
         padding-top: 23px;
     }
-    .close-menu {
-        display: none;
-    }
     .header-date {
         margin-top: 22px;
         display: flex;
@@ -420,9 +482,6 @@
     }
     .header-biker__media {
         max-width: 649px;
-    }
-    .open-menu {
-        display: none;
     }
     .header-bottom {
         border-top: 1px solid rgba(#fff, .1);
