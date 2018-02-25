@@ -83,10 +83,6 @@
       width: 10px;
       height: 10px;
       fill: #EE7D00;
-      margin-left: -5px;
-      left: 50%;
-      bottom: 16px;
-      position: absolute;
       -ms-transform: rotate(90deg);
       transform: rotate(90deg);
       transition: all 0.4s ease; }
@@ -727,20 +723,11 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   transition: background-color 0.4s ease; }
 
 .panel-heading__time {
-  height: 100%;
-  border-right: 2px solid #252525;
-  font-weight: 500;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  font-weight: 500;
   -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -ms-flex: 0 0 144px;
-  flex: 0 0 144px;
-  font-size: 1.875rem; }
+  align-items: center; }
 
 .panel-heading__date {
   text-align: center;
@@ -760,7 +747,6 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   font-size: 1.25rem; }
 
 .panel-heading__more {
-  height: 100%;
   margin-left: auto; }
 
 .panel-collapse {

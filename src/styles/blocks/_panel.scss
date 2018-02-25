@@ -11,15 +11,9 @@
 }
 
 .panel-heading__time {
-    height: 100%;
-    border-right: 2px solid #252525;
-    font-weight: 500;
     display: flex;
-    flex-direction: column;
+    font-weight: 500;
     align-items: center;
-    justify-content: center;
-    flex: 0 0 144px;
-    @include font-size(30px);
 }
 
 .panel-heading__date {
@@ -39,7 +33,6 @@
 }
 
 .panel-heading__more {
-    height: 100%;
     margin-left: auto;
 }
 
