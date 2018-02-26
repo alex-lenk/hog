@@ -237,6 +237,21 @@
     padding-top: 30px; } }
 
 @media (max-width: 575px) {
+  .panel-heading__date {
+    padding-left: 10px; }
+  .panel-body__price {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center; }
+    .panel-body__price .user {
+      width: 17px;
+      height: 16px;
+      fill: #fff; }
+  .panel-body__price-r {
+    width: 100%; }
   .human {
     display: none; }
   .section-block__header {

@@ -318,6 +318,24 @@
 }
 
 @media (max-width: 575px) {
+    .panel-heading__date {
+        padding-left: 10px;
+    }
+    .panel-body__price {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .user {
+            width: 17px;
+            height: 16px;
+            fill: #fff;
+        }
+    }
+    
+    .panel-body__price-r {
+        width: 100%;
+    }
+    
     .human {
         display: none;
     }
