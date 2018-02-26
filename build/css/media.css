@@ -1,4 +1,5 @@
 @media (max-width: 959px) {
+  .news-item__media,
   #section5 .section-block__header-right {
     display: none; }
   .panel-flex {

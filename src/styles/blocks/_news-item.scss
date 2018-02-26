@@ -21,7 +21,16 @@
     margin-top: -6px;
     text-transform: uppercase;
     font-weight: 500;
+    display: flex;
+    align-items: flex-end;
     @include font-size(24px);
+}
+
+.news-item__data {
+    margin-left: auto;
+    font-weight: 500;
+    color: #A0A0A0;
+    @include font-size(18px);
 }
 
 .news-item__chanel {
@@ -48,8 +57,8 @@
     align-items: center;
     @include font-size(16px);
     &:hover .news-item__more-text {
-            color: $colorOrange;
-            border-color: $colorOrange;
+        color: $colorOrange;
+        border-color: $colorOrange;
     }
 }
 
