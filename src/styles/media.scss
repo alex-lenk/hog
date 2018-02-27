@@ -8,6 +8,10 @@
 }
 
 @media (max-width: 959px) {
+    .hotel-window__content {
+        flex-direction: column;
+    }
+
     .news-item__media,
     #section5 .section-block__header-right {
         display: none;
@@ -59,10 +63,11 @@
     .section-block__header {
         align-items: center;
     }
+
     .section-block__header-right {
         padding-top: 0;
     }
-    .tab-date {
+    .section-block__header-right:not(.tabs-header__right) .tab-date {
         width: 220px;
         height: 50px;
         overflow: hidden;
@@ -448,6 +453,25 @@
 }
 
 @media (min-width: 960px) {
+    .hotel-window__prices li {
+        flex: 1;
+        &:not(:first-child):not(:last-child) {
+            flex: 1 0 12%;
+        }
+    }
+    .hotel-window__left {
+        width: 55%;
+    }
+
+    .hotel-window__right {
+        width: 37%;
+        margin-left: auto;
+        align-self: flex-start;
+        .bid-form {
+            margin-top: 70px;
+        }
+    }
+
     .panel-heading__event {
         @include font-size(20px);
     }
@@ -554,6 +578,31 @@
 }
 
 @media (min-width: 576px) and (max-width: 959px) {
+    .hotel-window__left {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .hotel-window__big {
+        max-width: 90%;
+        max-height: 100px;
+        overflow: hidden;
+    }
+
+    .hotel-thrum {
+        display: none;
+    }
+
+    .hotel-window__prices {
+        margin-top: 20px;
+        margin-bottom: 50px;
+        li:not(:first-child):not(:last-child) {
+            padding-left: 45px;
+            padding-right: 45px;
+            margin-left: 45px;
+            margin-right: 45px;
+        }
+    }
     .btn-black {
         min-width: 133px;
         padding: 0 29px;

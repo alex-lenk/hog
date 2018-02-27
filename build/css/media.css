@@ -1,4 +1,7 @@
 @media (max-width: 959px) {
+  .hotel-window__content {
+    -ms-flex-direction: column;
+    flex-direction: column; }
   .news-item__media,
   #section5 .section-block__header-right {
     display: none; }
@@ -37,12 +40,12 @@
     align-items: center; }
   .section-block__header-right {
     padding-top: 0; }
-  .tab-date {
+  .section-block__header-right:not(.tabs-header__right) .tab-date {
     width: 220px;
     height: 50px;
     overflow: hidden;
     background-color: #171817; }
-    .tab-date li {
+    .section-block__header-right:not(.tabs-header__right) .tab-date li {
       width: 100%;
       margin-right: 0;
       padding-bottom: 8px;
@@ -54,27 +57,27 @@
       -ms-flex-pack: center;
       justify-content: center;
       transition: all 0.4s ease; }
-      .tab-date li::before {
+      .section-block__header-right:not(.tabs-header__right) .tab-date li::before {
         display: none; }
-      .tab-date li:not(.active) {
+      .section-block__header-right:not(.tabs-header__right) .tab-date li:not(.active) {
         width: 0;
         min-width: 0; }
-        .tab-date li:not(.active) .tab-date__number,
-        .tab-date li:not(.active) .tab-date__month {
+        .section-block__header-right:not(.tabs-header__right) .tab-date li:not(.active) .tab-date__number,
+        .section-block__header-right:not(.tabs-header__right) .tab-date li:not(.active) .tab-date__month {
           opacity: 0;
           transition: all 0.4s ease; }
-      .tab-date li:first-child .arrow {
+      .section-block__header-right:not(.tabs-header__right) .tab-date li:first-child .arrow {
         left: 28px; }
-      .tab-date li:last-child .arrow {
+      .section-block__header-right:not(.tabs-header__right) .tab-date li:last-child .arrow {
         right: 28px;
         left: auto;
         -ms-transform: rotate(0);
         transform: rotate(0); }
-    .tab-date .active {
+    .section-block__header-right:not(.tabs-header__right) .tab-date .active {
       pointer-events: none; }
-      .tab-date .active .arrow {
+      .section-block__header-right:not(.tabs-header__right) .tab-date .active .arrow {
         fill: #535350; }
-    .tab-date .arrow {
+    .section-block__header-right:not(.tabs-header__right) .tab-date .arrow {
       width: 10px;
       height: 10px;
       position: absolute;
@@ -342,6 +345,21 @@
     height: 100%; } }
 
 @media (min-width: 960px) {
+  .hotel-window__prices li {
+    -ms-flex: 1;
+    flex: 1; }
+    .hotel-window__prices li:not(:first-child):not(:last-child) {
+      -ms-flex: 1 0 12%;
+      flex: 1 0 12%; }
+  .hotel-window__left {
+    width: 55%; }
+  .hotel-window__right {
+    width: 37%;
+    margin-left: auto;
+    -ms-flex-item-align: start;
+    align-self: flex-start; }
+    .hotel-window__right .bid-form {
+      margin-top: 70px; }
   .panel-heading__event {
     font-size: 1.25rem; }
   .bid-form {
@@ -411,6 +429,25 @@
       font-size: 0.9375rem; } }
 
 @media (min-width: 576px) and (max-width: 959px) {
+  .hotel-window__left {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .hotel-window__big {
+    max-width: 90%;
+    max-height: 100px;
+    overflow: hidden; }
+  .hotel-thrum {
+    display: none; }
+  .hotel-window__prices {
+    margin-top: 20px;
+    margin-bottom: 50px; }
+    .hotel-window__prices li:not(:first-child):not(:last-child) {
+      padding-left: 45px;
+      padding-right: 45px;
+      margin-left: 45px;
+      margin-right: 45px; }
   .btn-black {
     min-width: 133px;
     padding: 0 29px; }
