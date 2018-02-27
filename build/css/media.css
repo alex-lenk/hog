@@ -351,6 +351,8 @@
   .bid-form__close, .bid-form__send,
   .close-menu, .open-menu {
     display: none; }
+  .hotel-window__right .bid-form {
+    width: 100%; }
   .tab-date {
     -ms-flex-pack: end;
     justify-content: flex-end; }
@@ -395,6 +397,18 @@
   .header-menu:not(:first-of-type) {
     margin-right: 87px;
     max-width: 284px; } }
+
+@media (min-width: 576px) and (max-width: 719px) {
+  .hotel-item__panel {
+    padding-left: 15px; }
+  .hotel-item__name {
+    font-size: 1rem; }
+  .hotel-item__price {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 1rem; }
+    .hotel-item__price span {
+      font-size: 0.9375rem; } }
 
 @media (min-width: 576px) and (max-width: 959px) {
   .btn-black {
