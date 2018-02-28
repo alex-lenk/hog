@@ -1,6 +1,6 @@
 .hotels {
     background: url(../img/bg/hotel-bg.png) no-repeat center top;
-    transition: background 0.4s ease;
+    transition: background-size 0.4s ease;
     .section-block__inner {
         position: relative;
     }
@@ -299,7 +299,7 @@
 }
 
 .open-hotel {
-    background: transparent;
+    background-size: 0;
     .hotels-wrap, .pagination {
         opacity: 0;
     }

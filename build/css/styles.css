@@ -1109,7 +1109,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 .hotels {
   background: url(../img/bg/hotel-bg.png) no-repeat center top;
-  transition: background 0.4s ease; }
+  transition: background-size 0.4s ease; }
   .hotels .section-block__inner {
     position: relative; }
 
@@ -1363,7 +1363,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   outline: none; }
 
 .open-hotel {
-  background: transparent; }
+  background-size: 0; }
   .open-hotel .hotels-wrap, .open-hotel .pagination {
     opacity: 0; }
   .open-hotel .hotel-window {

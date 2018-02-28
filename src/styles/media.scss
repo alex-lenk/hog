@@ -11,7 +11,7 @@
     .hotel-window__content {
         flex-direction: column;
     }
-
+    
     .news-item__media,
     #section5 .section-block__header-right {
         display: none;
@@ -63,7 +63,7 @@
     .section-block__header {
         align-items: center;
     }
-
+    
     .section-block__header-right {
         padding-top: 0;
     }
@@ -453,6 +453,10 @@
 }
 
 @media (min-width: 960px) {
+    .hotel-window__head {
+        padding-bottom: 22px;
+    }
+    
     .hotel-window__prices li {
         flex: 1;
         &:not(:first-child):not(:last-child) {
@@ -462,7 +466,7 @@
     .hotel-window__left {
         width: 55%;
     }
-
+    
     .hotel-window__right {
         width: 37%;
         margin-left: auto;
@@ -471,7 +475,7 @@
             margin-top: 70px;
         }
     }
-
+    
     .panel-heading__event {
         @include font-size(20px);
     }
@@ -486,12 +490,11 @@
     .close-menu, .open-menu {
         display: none;
     }
-
-
+    
     .hotel-window__right .bid-form {
         width: 100%
     }
-
+    
     .tab-date {
         justify-content: flex-end;
         .arrow {
@@ -582,17 +585,17 @@
         display: flex;
         flex-wrap: wrap;
     }
-
+    
     .hotel-window__big {
         max-width: 90%;
         max-height: 100px;
         overflow: hidden;
     }
-
+    
     .hotel-thrum {
         display: none;
     }
-
+    
     .hotel-window__prices {
         margin-top: 20px;
         margin-bottom: 50px;

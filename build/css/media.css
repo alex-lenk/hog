@@ -345,6 +345,8 @@
     height: 100%; } }
 
 @media (min-width: 960px) {
+  .hotel-window__head {
+    padding-bottom: 22px; }
   .hotel-window__prices li {
     -ms-flex: 1;
     flex: 1; }
