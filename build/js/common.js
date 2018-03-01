@@ -121,7 +121,16 @@ $(document).ready(function () {
         focusOnSelect: true,
         infinite: false,
         prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg></button>',
-        nextArrow: '<button class="slick-next" aria-label="Next" type="button"><svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg></button>'
+        nextArrow: '<button class="slick-next" aria-label="Next" type="button"><svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg></button>',
+        responsive: [
+            {
+                breakpoint: 780,
+                settings: {
+                    vertical: true,
+                    verticalSwiping: true
+                }
+            }
+        ]
     });
 
 

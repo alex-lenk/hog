@@ -9,6 +9,8 @@
 
 @media (max-width: 959px) {
     .hotel-window__content {
+        padding-left: 30px;
+        padding-right: 30px;
         flex-direction: column;
     }
     
@@ -582,18 +584,19 @@
 
 @media (min-width: 576px) and (max-width: 959px) {
     .hotel-window__left {
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
     
     .hotel-window__big {
-        max-width: 90%;
-        max-height: 100px;
+        max-width: 79%;
+        max-height: 414px;
         overflow: hidden;
     }
     
     .hotel-thrum {
-        display: none;
+        max-width: 20%;
     }
     
     .hotel-window__prices {

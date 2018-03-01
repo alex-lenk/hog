@@ -1,5 +1,7 @@
 @media (max-width: 959px) {
   .hotel-window__content {
+    padding-left: 30px;
+    padding-right: 30px;
     -ms-flex-direction: column;
     flex-direction: column; }
   .news-item__media,
@@ -432,16 +434,17 @@
 
 @media (min-width: 576px) and (max-width: 959px) {
   .hotel-window__left {
+    width: 100%;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .hotel-window__big {
-    max-width: 90%;
-    max-height: 100px;
+    max-width: 79%;
+    max-height: 414px;
     overflow: hidden; }
   .hotel-thrum {
-    display: none; }
+    max-width: 20%; }
   .hotel-window__prices {
     margin-top: 20px;
     margin-bottom: 50px; }
