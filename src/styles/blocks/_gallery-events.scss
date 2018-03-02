@@ -1,3 +1,25 @@
+.gallery-events {
+    transition: background-size 0.7s ease;
+    .section-block__inner {
+        position: relative;
+    }
+}
+
+.gallery-albums {
+    transition: opacity 0.7s ease;
+}
+
+.gallery-photos {
+    width: 100%;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    z-index: 10;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.7s ease;
+}
+
 .gallery-events__item {
     margin-bottom: 40px;
 }
@@ -24,3 +46,16 @@
     transition: all 0.4s ease;
     @include font-size(24px);
 }
+
+.gallery-opened {
+    background-size: 0;
+    .gallery-photos {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .gallery-albums {
+        opacity: 0;
+    }
+}
+
+

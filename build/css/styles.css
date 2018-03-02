@@ -1089,6 +1089,24 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 .overflow-show__hint .view {
   margin-top: -28px; }
 
+.gallery-events {
+  transition: background-size 0.7s ease; }
+  .gallery-events .section-block__inner {
+    position: relative; }
+
+.gallery-albums {
+  transition: opacity 0.7s ease; }
+
+.gallery-photos {
+  width: 100%;
+  position: absolute;
+  top: 130px;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.7s ease; }
+
 .gallery-events__item {
   margin-bottom: 40px; }
 
@@ -1106,6 +1124,14 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   font-weight: 500;
   transition: all 0.4s ease;
   font-size: 1.5rem; }
+
+.gallery-opened {
+  background-size: 0; }
+  .gallery-opened .gallery-photos {
+    opacity: 1;
+    pointer-events: auto; }
+  .gallery-opened .gallery-albums {
+    opacity: 0; }
 
 .hotels {
   background: url(../img/bg/hotel-bg.png) no-repeat center top;

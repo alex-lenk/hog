@@ -194,22 +194,20 @@ $(document).ready(function () {
     /* END */
 
 
-    /* BEGIN: Этот кусок кода тестовый, для показа, его нужно удалить после интеграции на сайт */
+    /* BEGIN: gallery-events */
 
-    var galleryAlbums = $('.gallery-albums'),
-        galleryPhotos = $('.gallery-photos');
+    var galleryEvents = $('.gallery-events'),
+        galleryOpened = 'gallery-opened';
 
     $('.gallery-albums .gallery-events__item').click(
         function () {
-            galleryAlbums.fadeOut();
-            galleryPhotos.fadeIn();
+            galleryEvents.addClass(galleryOpened);
         }
     );
 
     $('.gallery-photos .section-title').click(
         function () {
-            galleryAlbums.fadeIn();
-            galleryPhotos.fadeOut();
+            galleryEvents.removeClass(galleryOpened);
         }
     );
 
