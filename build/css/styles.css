@@ -725,7 +725,6 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   margin-bottom: 1px; }
 
 .panel-heading {
-  height: 90px;
   background-color: rgba(30, 30, 30, 0.45);
   display: -ms-flexbox;
   display: flex;
@@ -1100,10 +1099,13 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 .gallery-photos {
   width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   position: absolute;
   top: 130px;
   left: 0;
   z-index: 10;
+  background-color: #262626;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.7s ease; }
@@ -1133,6 +1135,9 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     pointer-events: auto; }
   .gallery-opened .gallery-albums {
     opacity: 0; }
+
+.slick-disabled {
+  pointer-events: none; }
 
 .hotels {
   background: url(../img/bg/hotel-bg.png) no-repeat center top;

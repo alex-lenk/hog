@@ -243,6 +243,10 @@
     padding-top: 30px; } }
 
 @media (max-width: 575px) {
+  .press-about .tab-date {
+    display: none; }
+  .section-block__header-right:not(.tabs-header__right) .tab-date {
+    width: 100%; }
   .panel-heading__date {
     padding-left: 10px; }
   .panel-body__price {
@@ -280,7 +284,6 @@
       -ms-flex-order: 2;
       order: 2; }
   .panel-heading {
-    height: 115px;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .panel-heading__event {
@@ -324,6 +327,8 @@
     margin-bottom: 30px; } }
 
 @media (min-width: 576px) {
+  .panel-heading {
+    height: 90px; }
   .user {
     display: none; }
   .panel-heading__time .clock {
@@ -433,6 +438,8 @@
       font-size: 0.9375rem; } }
 
 @media (min-width: 576px) and (max-width: 959px) {
+  .hotel-window__content .bid-form__send {
+    margin-top: 30px; }
   .hotel-window__left {
     width: 100%;
     display: -ms-flexbox;
@@ -440,11 +447,32 @@
     -ms-flex-wrap: wrap;
     flex-wrap: wrap; }
   .hotel-window__big {
-    max-width: 79%;
+    max-width: calc(100% - 140px);
     max-height: 414px;
     overflow: hidden; }
   .hotel-thrum {
-    max-width: 20%; }
+    margin-left: auto;
+    max-width: 125px;
+    padding: 25px 0 30px; }
+    .hotel-thrum .slick-slide {
+      padding: 5px 0 0; }
+  .slick-arrow {
+    height: 20px;
+    width: 100%; }
+    .slick-arrow .arrow {
+      left: 50%;
+      margin-left: -5px; }
+  .slick-prev .arrow {
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg); }
+  .slick-next {
+    right: auto;
+    left: 0;
+    bottom: 0;
+    top: auto; }
+    .slick-next .arrow {
+      -ms-transform: rotate(90deg);
+      transform: rotate(90deg); }
   .hotel-window__prices {
     margin-top: 20px;
     margin-bottom: 50px; }

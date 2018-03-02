@@ -124,10 +124,19 @@ $(document).ready(function () {
         nextArrow: '<button class="slick-next" aria-label="Next" type="button"><svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg></button>',
         responsive: [
             {
-                breakpoint: 780,
+                breakpoint: 960,
                 settings: {
                     vertical: true,
-                    verticalSwiping: true
+                    verticalSwiping: true,
+                    slidesToShow: 4
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    vertical: true,
+                    verticalSwiping: true,
+                    slidesToShow: 3
                 }
             }
         ]
