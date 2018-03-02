@@ -1090,6 +1090,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   margin-top: -28px; }
 
 .gallery-events {
+  background: url(../img/bg/gallery-bg.png) no-repeat center top;
   transition: background-size 0.7s ease; }
   .gallery-events .section-block__inner {
     position: relative; }
@@ -1408,9 +1409,6 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 .excursions-city__carousel {
   border-top: 10px solid transparent; }
-
-.gallery-events {
-  background: url(../img/bg/gallery-bg.png) no-repeat center top; }
 
 .fixed-nav .header-container {
   position: static;
