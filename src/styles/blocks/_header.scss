@@ -1,9 +1,11 @@
 .header {
+    width: 100%;
     height: 100vh;
     background: url(../img/bg/header-bg.jpg) no-repeat center;
     background-size: cover;
     display: flex;
     flex-direction: column;
+    
     &::before {
         height: 100%;
         right: 0;
@@ -13,27 +15,38 @@
         background-size: contain;
         content: '';
     }
-}
-
-.header-container {
-    padding-top: 35px;
-    flex: 1;
-    &::before {
-        height: 100%;
+    
+    &::after {
         position: absolute;
         left: 50%;
         top: 0;
         transform: translateX(-50%);
         content: '';
-        background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.00) 0%, rgba(110, 110, 110, 0.36) 25%, #757575 47%);
+        background-image: linear-gradient(0deg, rgba(0, 0, 0, .00) 0%, rgba(110, 110, 110, .07) 25%, #757575 47%);
         box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.25);
     }
+}
+
+.header-container {
+    padding-top: 35px;
+    flex: 0 0 160px;
 }
 
 .header-panel {
     z-index: 5;
     position: relative;
     align-items: flex-start;
+    &::before {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: url(../img/bg/header-left-bg@2x.png) no-repeat top right #1E1E1E;
+        background-size: contain;
+        content: '';
+        transform: translateX(-100%);
+    }
 }
 
 .header-panel__inner {
@@ -72,7 +85,6 @@
     }
 }
 
-
 .header-menu__link {
     color: inherit;
 }
@@ -94,14 +106,28 @@
     display: flex;
 }
 
-.header-lang__item {
+.language-bar-item {
     padding-right: 10px;
     position: relative;
+    text-transform: uppercase;
+    font-weight: 400;
     color: $colorOrange;
-    &:not(.header-lang__active) {
-        display: none;
+    line-height: 1;
+    @include font-size(16px);
+    &:not(.language-bar-current) {
+        display: flex;
+        &::before {
+            width: 10px;
+            height: 10px;
+            top: 3px;
+            right: -5px;
+            position: absolute;
+            background: url(../img/arrow.svg) no-repeat center;
+            background-size: contain;
+            content: '';
+        }
     }
-    &:hover .header-lang__text {
+    &:hover a {
         border-bottom-color: $colorOrange;
     }
     .arrow {
@@ -112,17 +138,15 @@
         top: 2px;
         right: 0;
     }
+    a, span {
+        border-bottom: 1px solid transparent;
+        text-transform: uppercase;
+        transition: all 0.4s ease;
+    }
 }
 
-.header-lang__active {
-    display: flex;
-}
-
-.header-lang__text {
-    border-bottom: 1px solid transparent;
-    margin-right: 5px;
-    text-transform: uppercase;
-    transition: all 0.4s ease;
+.language-bar-current {
+    display: none;
 }
 
 /*****************************************/
@@ -132,6 +156,7 @@
 }
 
 .header-date__number {
+    top: -6px;
     color: $colorOrange;
     line-height: 1;
     position: relative;
@@ -141,16 +166,18 @@
 }
 
 .header-date__month {
-    top: 9px;
+    min-width: 49px;
+    min-height: 26px;
+    letter-spacing: 1px;
+    top: 19px;
     left: 36px;
     position: absolute;
     transform: rotate(90deg);
 }
 
 .header-date__location {
-    max-width: 237px;
+    max-width: 206px;
     padding-left: 44px;
-    top: -6px;
     position: relative;
     text-transform: uppercase;
     font-weight: 700;
@@ -159,10 +186,6 @@
 }
 
 /*****************************************/
-
-.header-left {
-    padding-top: 50px;
-}
 
 .header-content {
     font-weight: 400;
@@ -180,6 +203,7 @@
 .header-biker {
     position: relative;
     z-index: 5;
+    text-align: right;
 }
 
 .header-biker__media {
@@ -193,6 +217,7 @@
     margin-top: auto;
     color: #C6C6C6;
     overflow: hidden;
+    flex: none;
     @include font-size(18px);
     li {
         position: relative;
@@ -235,7 +260,7 @@
 }
 
 .header-bottom__block {
-    height: 121px;
+    height: 100px;
     align-items: center;
     position: relative;
     display: inline-flex;
@@ -251,6 +276,10 @@
 
 .header-bottom__text {
     line-height: 22px;
+}
+
+.header-wrap {
+    overflow: hidden;
 }
 
 .header-down {

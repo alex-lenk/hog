@@ -15,7 +15,7 @@
 
 .pagination-prev,
 .pagination-next {
-    height: inherit;
+    height: 50px;
     width: 113px;
     text-transform: uppercase;
     flex: none;
@@ -29,29 +29,38 @@
         height: 10px;
         transition: all 0.4s ease;
     }
-    &:not(.pagination-disable) {
-        color: $colorOrange;
-        background-color: #fff;
-        cursor: pointer;
-        .arrow {
-            fill: $colorOrange;
-        }
-        &:hover {
-            color: #fff;
-            background-color: $colorOrange;
+}
+
+.owl-next, .owl-prev {
+    &:not(.disabled) {
+        .pagination-prev,
+        .pagination-next {
+            color: $colorOrange;
+            background-color: #fff;
+            cursor: pointer;
             .arrow {
-                fill: #fff;
+                fill: $colorOrange;
+            }
+            &:hover {
+                color: #fff;
+                background-color: $colorOrange;
+                .arrow {
+                    fill: #fff;
+                }
             }
         }
     }
 }
 
-.pagination-disable {
-    background-color: #222422;
-    color: #A0A0A0;
-    cursor: default;
-    .arrow {
-        fill: #A0A0A0;
+.section-block .disabled {
+    .pagination-prev,
+    .pagination-next {
+        background-color: #222422;
+        color: #A0A0A0;
+        cursor: default;
+        .arrow {
+            fill: #A0A0A0;
+        }
     }
 }
 

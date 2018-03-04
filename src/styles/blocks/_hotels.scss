@@ -38,6 +38,9 @@
     background-color: #1E1E1E;
     display: inline-flex;
     align-items: center;
+    flex: 0 0 130px;
+    justify-content: center;
+    white-space: nowrap;
     @include font-size(20px);
     span {
         @include font-size(18px);
@@ -227,7 +230,7 @@
         fill: #fff;
         position: absolute;
         left: -25px;
-        top: 2px;
+        top: 0;
         transition: fill 0.4s ease;
     }
 }
