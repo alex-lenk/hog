@@ -1,7 +1,7 @@
 @import "mixin";
 @import "variables";
 
-.ui-placeholder, .form-control {
+.ui-placeholder {
     @include hidePlaceholder {
         opacity: 1;
         font-weight: 300;
@@ -11,6 +11,7 @@
         @include font-size(18px);
     }
     &:focus {
+        border-color: rgba(#fff, .7);
         @include hidePlaceholder {
             opacity: 0;
             transition: opacity 0.3s ease;

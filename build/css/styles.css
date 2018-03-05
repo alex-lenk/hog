@@ -107,7 +107,7 @@
       color: #fff;
       background-color: #EE7D00; }
 
-.ui-placeholder::-moz-placeholder, .form-control::-moz-placeholder {
+.ui-placeholder::-moz-placeholder {
   opacity: 1;
   font-weight: 300;
   color: #C6C6C6;
@@ -115,7 +115,7 @@
   font-family: akrobat, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Segoe UI Symbol";
   font-size: 1.125rem; }
 
-.ui-placeholder:-ms-input-placeholder, .form-control:-ms-input-placeholder {
+.ui-placeholder:-ms-input-placeholder {
   opacity: 1;
   font-weight: 300;
   color: #C6C6C6;
@@ -123,7 +123,7 @@
   font-family: akrobat, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Segoe UI Symbol";
   font-size: 1.125rem; }
 
-.ui-placeholder::-ms-input-placeholder, .form-control::-ms-input-placeholder {
+.ui-placeholder::-ms-input-placeholder {
   opacity: 1;
   font-weight: 300;
   color: #C6C6C6;
@@ -131,7 +131,7 @@
   font-family: akrobat, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Segoe UI Symbol";
   font-size: 1.125rem; }
 
-.ui-placeholder::-webkit-input-placeholder, .form-control::-webkit-input-placeholder {
+.ui-placeholder::-webkit-input-placeholder {
   opacity: 1;
   font-weight: 300;
   color: #C6C6C6;
@@ -139,21 +139,20 @@
   font-family: akrobat, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif, "Segoe UI Symbol";
   font-size: 1.125rem; }
 
-.ui-placeholder:focus::-moz-placeholder, .form-control:focus::-moz-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease; }
-
-.ui-placeholder:focus:-ms-input-placeholder, .form-control:focus:-ms-input-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease; }
-
-.ui-placeholder:focus::-ms-input-placeholder, .form-control:focus::-ms-input-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease; }
-
-.ui-placeholder:focus::-webkit-input-placeholder, .form-control:focus::-webkit-input-placeholder {
-  opacity: 0;
-  transition: opacity 0.3s ease; }
+.ui-placeholder:focus {
+  border-color: rgba(255, 255, 255, 0.7); }
+  .ui-placeholder:focus::-moz-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+  .ui-placeholder:focus:-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+  .ui-placeholder:focus::-ms-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
+  .ui-placeholder:focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: opacity 0.3s ease; }
 
 .ui-group {
   margin-bottom: 15px;

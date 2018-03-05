@@ -101,7 +101,7 @@ $(document).ready(function () {
                     slidesToShow: 2
                 }
             }
-        ],
+        ]
     });
 
     /* END */
