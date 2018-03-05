@@ -298,6 +298,6 @@
         left: 0;
         content: '';
         background-color: $colorOrange;
-        animation: spin 1.5s 1000 linear;
+        animation: downUpAnimate 1.5s 1000 linear;
     }
 }

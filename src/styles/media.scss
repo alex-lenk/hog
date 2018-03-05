@@ -366,7 +366,16 @@
     .hotel-window__left:not(.hotel-window__head) {
         min-height: 550px;
     }
-
+    
+    .fixed-menu__top {
+        .logo-hog {
+            @include font-size(26px);
+        }
+        .close-menu {
+            margin-top: -8px;
+        }
+    }
+    
     .hotel-window {
         min-height: 900px;
     }

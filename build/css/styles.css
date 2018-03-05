@@ -354,7 +354,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   outline: none;
   box-shadow: none; }
 
-@keyframes spin {
+@keyframes downUpAnimate {
   0% {
     height: 0; }
   50% {
@@ -695,7 +695,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     left: 0;
     content: '';
     background-color: #EE7D00;
-    animation: spin 1.5s 1000 linear; }
+    animation: downUpAnimate 1.5s 1000 linear; }
 
 .section-block {
   margin-bottom: 30px;

@@ -257,6 +257,10 @@
     background-size: 728px !important; }
   .hotel-window__left:not(.hotel-window__head) {
     min-height: 550px; }
+  .fixed-menu__top .logo-hog {
+    font-size: 1.625rem; }
+  .fixed-menu__top .close-menu {
+    margin-top: -8px; }
   .hotel-window {
     min-height: 900px; }
   .hotel-window__prices li {

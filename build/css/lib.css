@@ -1446,6 +1446,8 @@ li.fancybox-thumbs-loading {
   position: relative;
   -ms-touch-action: pan-Y;
   -moz-backface-visibility: hidden;
+  display: -ms-flexbox;
+  display: flex;
   /* fix firefox animation glitch */ }
 
 .owl-carousel .owl-stage:after {
@@ -1474,7 +1476,6 @@ li.fancybox-thumbs-loading {
 .owl-carousel .owl-item {
   position: relative;
   min-height: 1px;
-  float: left;
   -webkit-backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none; }

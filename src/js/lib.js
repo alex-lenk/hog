@@ -4,13 +4,12 @@
  * 1.   smoothscroll.js
  * 2.   svgxuse.min.js
  * 3.   jquery.everslider.min.js
- *
- *
  * 4.   swiper.min.js
  * 5.   jquery.formstyler.min.js
  * 6.   isotope.pkgd.min.js
  * 7.   jquery.fancybox.min.js
  * 8.   bootstrap.min.js
+ * 9.   current-device.min.js
  *
  */
 
@@ -41,3 +40,6 @@
 
 /* 8. bootstrap.min.js */
 //= lib/bootstrap.min.js
+
+/* 9. bootstrap.min.js */
+//= lib/current-device.min.js

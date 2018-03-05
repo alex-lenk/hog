@@ -196,7 +196,6 @@
     </div>
 </header>
 
-
 <section id="section2" class="section-block program-event">
     <div class="section-block__inner container">
         <div class="section-block__header row">
@@ -900,6 +899,87 @@
 </section>
 
 
+<style>
+    .content {
+        text-align: left;
+        padding: 10px 35px;
+        border: 1px solid #b3b3b3;
+        border-radius: 4px;
+        box-shadow: 0 1px 10px #a7a7a7, inset 0 1px 0 #fff;
+        background-color: #fafafa;
+        background-image: -moz-radial-gradient(50% 35%, ellipse cover, #FAF7F7, #fffde8 100%);
+        background-image: -webkit-radial-gradient(50% 35%, ellipse cover, #FAF7F7, #fffde8 100%);
+        background-image: -o-radial-gradient(50% 35%, ellipse cover, #FAF7F7, #fffde8 100%);
+        background-image: -ms-radial-gradient(50% 35%, ellipse cover, #FAF7F7, #fffde8 100%);
+        background-image: radial-gradient(50% 35%, ellipse cover, #FAF7F7, #fffde8 100%);
+    }
+
+    .mobile .mobile,
+    .tablet .tablet,
+    .desktop .desktop,
+    .portrait .portrait,
+    .landscape .landscape,
+    .ios .ios,
+    .iphone .iphone,
+    .ipad .ipad,
+    .ipod .ipod,
+    .android .android,
+    .blackberry .blackberry,
+    .macos .macos,
+    .windows .windows,
+    .fxos .fxos,
+    .meego .meego,
+    .television .television {
+        background: green;
+        color: #FFF;
+    }
+
+    span {
+        display: block;
+        padding: 2px 15px;
+    }
+
+    h2 {
+        margin: 0;
+    }
+
+    .content {
+        padding: 25px 35px;
+    }
+
+    iframe {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 1em;
+        width: 270px !important;
+        margin-top: 10px;
+    }
+</style>
+<div class="container content">
+    <h2>Device Type</h2>
+    <span class="mobile">.mobile</span>
+    <span class="tablet">.tablet</span>
+    <span class="desktop">.desktop</span>
+
+
+    <h2>Orientation</h2>
+    <span class="portrait">.portrait</span>
+    <span class="landscape">.landscape</span>
+
+    <h2>Device OS</h2>
+    <span class="ios">.ios</span>
+    <span class="iphone">.iphone</span>
+    <span class="ipad">.ipad</span>
+    <span class="ipod">.ipod</span>
+    <span class="android">.android</span>
+    <span class="blackberry">.blackberry</span>
+    <span class="macos">.macos</span>
+    <span class="windows">.windows</span>
+    <span class="fxos">.fxos</span>
+    <span class="meego">.meego</span>
+    <span class="television">.television</span>
+</div>
+
 <section id="section4" class="hotels section-block">
     <div class="section-block__inner container">
         <div class="section-block__header">
@@ -1106,20 +1186,20 @@
             </div>
 
             <div class="hotel-window__content">
-                    <div class="hotel-window__head hotel-window__left">
-                        <h4 class="hotel-window__title"><a href="#" rel="nofollow" target="_blank">
-                            DoubleTree by Hilton
-                            <svg class="external-link">
-                                <use xlink:href="img/sprite.svg#external-link"></use>
-                            </svg>
-                        </a></h4>
-                        <div class="hotel-window__location"><a href="#" rel="nofollow" target="_blank">
-                            <svg class="location">
-                                <use xlink:href="img/sprite.svg#location"></use>
-                            </svg>
-                            Показать на карте
-                        </a></div>
-                    </div>
+                <div class="hotel-window__head hotel-window__left">
+                    <h4 class="hotel-window__title"><a href="#" rel="nofollow" target="_blank">
+                        DoubleTree by Hilton
+                        <svg class="external-link">
+                            <use xlink:href="img/sprite.svg#external-link"></use>
+                        </svg>
+                    </a></h4>
+                    <div class="hotel-window__location"><a href="#" rel="nofollow" target="_blank">
+                        <svg class="location">
+                            <use xlink:href="img/sprite.svg#location"></use>
+                        </svg>
+                        Показать на карте
+                    </a></div>
+                </div>
 
                 <div class="hotel-window__right">
                     <ul class="hotel-window__prices list-unstyled">
