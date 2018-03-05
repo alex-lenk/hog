@@ -688,7 +688,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   position: absolute;
   overflow: hidden; }
   .header-down::after {
-    width: 100%;
+    width: 1px;
     height: 100%;
     position: absolute;
     bottom: 0;
