@@ -31,6 +31,9 @@
 .press-about {
     margin-bottom: 150px;
     background: url(../img/bg/press-bg.png) no-repeat center top;
+    .owl-stage-outer {
+        margin-bottom: 30px;
+    }
 }
 
 .excursions-city__carousel {
@@ -55,6 +58,9 @@
         display: block;
         position: relative;
     }
+    .header-menu:not(:first-of-type) {
+        margin-left: 0;
+    }
 }
 
 .fixed-nav .header-panel__second {
@@ -77,7 +83,7 @@
         padding-left: 15px;
         align-items: center;
     }
-    .header-menu, .header-lang {
+    .header-lang {
         padding-top: 7px;
     }
     .header-logo {
@@ -147,22 +153,6 @@
     }
 }
 
-.header-menu__point:not(:last-child) {
-    margin-bottom: 60px;
-}
-
 .menu-panel-opened .fixed-menu {
     transform: translateX(0);
-}
-
-.open-menu {
-    margin-left: -15px;
-    padding: 20px 10px 10px 41px;
-    position: relative;
-    z-index: 15;
-    .nav-button {
-        width: 22px;
-        height: 22px;
-        fill: #fff;
-    }
 }

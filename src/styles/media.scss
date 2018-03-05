@@ -31,6 +31,30 @@
 }
 
 @media (max-width: 959px) {
+    .hotels {
+        .bid-form {
+            display: flex;
+            align-items: flex-end;
+        }
+        .bid-form__inner {
+            width: 100%;
+        }
+    }
+
+    .open-menu {
+        margin-left: -10px;
+        padding: 20px 10px 10px;
+        position: relative;
+        z-index: 15;
+        cursor: pointer;
+        .nav-button {
+            width: 22px;
+            height: 22px;
+            fill: #fff;
+        }
+    }
+
+
     .hotel-window p {
         width: 100%;
     }
@@ -204,11 +228,13 @@
     .header-logo {
         width: 196px;
     }
-    
+
     .header-lang {
         margin-left: auto;
         padding-top: 24px;
-        padding-right: 43px;
+    }
+    .header-panel__second .header-lang {
+        margin-left: 0;
     }
     .header-left {
         text-align: center;
@@ -333,6 +359,14 @@
 }
 
 @media (max-width: 575px) {
+    .program-event, .excursions-city, .hotels, .gallery-events, .press-about {
+        background-size: 728px !important;
+    }
+
+    .hotel-window__left:not(.hotel-window__head) {
+        min-height: 550px;
+    }
+
     .hotel-window {
         min-height: 900px;
     }
@@ -353,8 +387,7 @@
     .overflow-show:hover::before,
     .overflow-show:hover .view,
     .overflow-show:hover .text,
-    .press-about .tab-date,
-    .owl-nav {
+    .press-about .tab-date {
         display: none;
     }
     
@@ -494,6 +527,10 @@
 }
 
 @media (min-width: 720px) {
+    .menu-panel-opened .header-menu__point:not(:last-child) {
+        margin-bottom: 60px;
+    }
+
     .tab-date {
         justify-content: flex-end;
         .arrow {
@@ -516,12 +553,13 @@
     }
     .news-item__data {
         margin-left: auto;
+        align-items: flex-start;
         @include font-size(18px);
     }
 }
 
 @media (min-width: 960px) {
-    .header .open-menu {
+    .open-menu {
         display: none;
     }
     
@@ -603,8 +641,11 @@
         position: relative;
         z-index: 5;
     }
-    .header-menu {
+    .header .header-menu {
         padding-top: 23px;
+    }
+    .header-panel__second .header-menu {
+        padding-top: 9px;
     }
     .header-date {
         margin-top: 22px;

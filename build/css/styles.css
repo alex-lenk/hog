@@ -611,7 +611,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 .header-content__link {
   color: #EE7D00;
-  border-bottom: 1px solid; }
+  border-bottom: 1px solid;
+  cursor: pointer; }
 
 .header-biker {
   position: relative;
@@ -814,7 +815,6 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   font-weight: 500;
   font-size: 1.375rem; }
   .panel-body__price .human {
-    margin-left: 10px;
     font-weight: 400;
     font-size: 1.1875rem; }
 
@@ -1455,6 +1455,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 .press-about {
   margin-bottom: 150px;
   background: url(../img/bg/press-bg.png) no-repeat center top; }
+  .press-about .owl-stage-outer {
+    margin-bottom: 30px; }
 
 .excursions-city__carousel {
   border-top: 10px solid transparent; }
@@ -1476,6 +1478,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     margin: 0 auto;
     display: block;
     position: relative; }
+  .header-panel__second .header-menu:not(:first-of-type) {
+    margin-left: 0; }
 
 .fixed-nav .header-panel__second {
   top: 0;
@@ -1496,7 +1500,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   -ms-flex-align: center;
   align-items: center; }
 
-.fixed-nav .header-menu, .fixed-nav .header-lang {
+.fixed-nav .header-lang {
   padding-top: 7px; }
 
 .fixed-nav .header-logo {
@@ -1566,19 +1570,6 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     width: 18px;
     height: 18px; }
 
-.header-menu__point:not(:last-child) {
-  margin-bottom: 60px; }
-
 .menu-panel-opened .fixed-menu {
   -ms-transform: translateX(0);
   transform: translateX(0); }
-
-.open-menu {
-  margin-left: -15px;
-  padding: 20px 10px 10px 41px;
-  position: relative;
-  z-index: 15; }
-  .open-menu .nav-button {
-    width: 22px;
-    height: 22px;
-    fill: #fff; }
