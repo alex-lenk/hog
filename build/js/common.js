@@ -75,28 +75,33 @@ $(document).ready(function () {
 
     /* BEGIN: Инициализация карусели */
 
-    $('.partner-carousel').owlCarousel({
-        loop: false,
-        margin: 40,
-        autoWidth: true,
-        items: 9,
-        responsiveClass: true,
-        navText: ['<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>',
-            '<svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg>'],
-        responsive: {
-            0: {
-                items: 1,
-                nav: true
+    $('.partner-carousel').slick({
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        infinite: false,
+        dots: false,
+        prevArrow: '<button class="slick-prev" aria-label="Previous" type="button"><svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg></button>',
+        nextArrow: '<button class="slick-next" aria-label="Next" type="button"><svg class="arrow"><use xlink:href="img/sprite.svg#arrow"></use></svg></button>',
+        responsive: [
+            {
+                breakpoint: 960,
+                settings: {
+                    slidesToShow: 5
+                }
             },
-            600: {
-                items: 3,
-                nav: false
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 3
+                }
             },
-            1000: {
-                items: 9,
-                nav: true
+            {
+                breakpoint: 415,
+                settings: {
+                    slidesToShow: 2
+                }
             }
-        }
+        ],
     });
 
     /* END */
@@ -136,6 +141,14 @@ $(document).ready(function () {
                 settings: {
                     vertical: true,
                     verticalSwiping: true,
+                    slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 576,
+                settings: {
+                    vertical: false,
+                    verticalSwiping: false,
                     slidesToShow: 3
                 }
             }

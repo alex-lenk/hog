@@ -7,7 +7,7 @@
 }
 
 .hotels .pagination,
-.hotels-wrap {
+.hotels-wrap, .hotels .owl-nav {
     transition: all 0.4s ease;
 }
 
@@ -303,7 +303,7 @@
 
 .open-hotel {
     background-size: 0;
-    .hotels-wrap, .pagination {
+    .hotels-wrap, .pagination, .owl-nav {
         opacity: 0;
     }
     .hotel-window {
