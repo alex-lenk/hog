@@ -42,4 +42,4 @@
 //= lib/bootstrap.min.js
 
 /* 9. bootstrap.min.js */
-//= lib/current-device.min.js
+//= lib/jquery.mb.browser.min.js

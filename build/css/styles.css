@@ -751,12 +751,16 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   margin-bottom: 2px; }
 
 .panel-heading {
-  background-color: rgba(30, 30, 30, 0.45);
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
   align-items: center;
   transition: background-color 0.4s ease; }
+  .panel-heading:not(.col-active) {
+    background-color: rgba(30, 30, 30, 0.45); }
+
+.col-active {
+  background-color: rgba(30, 30, 30, 0.7); }
 
 .panel-heading__time {
   display: -ms-flexbox;
@@ -1282,9 +1286,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   background: #171817;
   box-shadow: 0 0 70px 0 rgba(0, 0, 0, 0.3);
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap; }
+  display: flex; }
 
 .hotel-window__right .bid-form {
   background-color: #282A28;

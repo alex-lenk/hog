@@ -253,10 +253,10 @@
     transform: translateX(-50%); } }
 
 @media (max-width: 575px) {
+  .safari-browser .header-wrap {
+    padding-bottom: 125px; }
   .program-event, .excursions-city, .hotels, .gallery-events, .press-about {
     background-size: 728px !important; }
-  .hotel-window__left:not(.hotel-window__head) {
-    min-height: 550px; }
   .fixed-menu__top .logo-hog {
     font-size: 1.625rem; }
   .fixed-menu__top .close-menu {
@@ -384,6 +384,9 @@
     height: 100%; } }
 
 @media (min-width: 720px) {
+  .hotel-window__content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
   .menu-panel-opened .header-menu__point:not(:last-child) {
     margin-bottom: 60px; }
   .tab-date {

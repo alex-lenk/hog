@@ -235,4 +235,10 @@ $(document).ready(function () {
 
     /* END */
 
+
+    $(function(){
+        if (jQuery.browser.safari) {
+            $('html').addClass('safari-browser');
+        }
+    });
 });

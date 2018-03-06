@@ -3,10 +3,16 @@
 }
 
 .panel-heading {
-    background-color: rgba(#1E1E1E, .45);
     display: flex;
     align-items: center;
     transition: background-color 0.4s ease;
+    &:not(.col-active) {
+        background-color: rgba(#1E1E1E, .45);
+    }
+}
+
+.col-active {
+    background-color: rgba(#1E1E1E, .7);
 }
 
 .panel-heading__time {

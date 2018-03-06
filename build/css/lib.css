@@ -1476,6 +1476,8 @@ li.fancybox-thumbs-loading {
 .owl-carousel .owl-item {
   position: relative;
   min-height: 1px;
+  -ms-flex: none;
+  flex: none;
   -webkit-backface-visibility: hidden;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none; }
