@@ -16,7 +16,6 @@
 @import "blocks/pagination";
 @import "blocks/partner";
 @import "blocks/footer";
-@import "blocks/overflow-show";
 @import "blocks/gallery-events";
 @import "blocks/hotels";
 
@@ -42,17 +41,23 @@
 
 .header-panel__second {
     width: 100%;
+    height: 80px;
+    overflow: hidden;
     position: fixed;
-    top: -100%;
-    z-index: 90;
+    top: 0;
+    z-index: 102;
     left: 0;
     margin-bottom: 0;
     background: #262626 url(../img/bg/bg.jpg) repeat;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.30);
     opacity: 0;
-    transition: all 0.8s;
-    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
-    will-change: opacity, top;
+    transform: translateY(-100%);
+    transition: transform .8s ease;
+    will-change: transform;
+    .header-panel {
+        opacity: 0;
+        transition: all 1s ease;
+    }
     .header-logo {
         margin: 0 auto;
         display: block;
@@ -63,12 +68,15 @@
     }
 }
 
-.fixed-nav .header-panel__second {
-    top: 0;
-    opacity: 1;
-}
-
 .fixed-nav {
+    .header-panel__second {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .header-panel {
+        opacity: 1;
+    }
     .header-container {
         position: static;
         z-index: 99;

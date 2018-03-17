@@ -31,6 +31,15 @@
 }
 
 @media (max-width: 959px) {
+    .overflow-show .view,
+    .overflow-show .text {
+        display: none;
+    }
+    
+    .hotel-item__inner .overflow-show {
+        position: relative;
+    }
+    
     .hotels {
         .bid-form {
             display: flex;
@@ -40,7 +49,7 @@
             width: 100%;
         }
     }
-
+    
     .open-menu {
         margin-left: -10px;
         padding: 20px 10px 10px;
@@ -53,8 +62,7 @@
             fill: #fff;
         }
     }
-
-
+    
     .hotel-window p {
         width: 100%;
     }
@@ -228,7 +236,7 @@
     .header-logo {
         width: 196px;
     }
-
+    
     .header-lang {
         margin-left: auto;
         padding-top: 24px;
@@ -245,7 +253,7 @@
         text-align: left;
     }
     .header-date__location {
-        max-width: 155px;
+        max-width: 195px;
     }
     .header-content {
         width: 100%;
@@ -262,6 +270,22 @@
     }
     .header-bottom .container {
         display: none;
+    }
+    
+    .ipad.tablet.portrait .header-wrap {
+        height: 100%;
+    }
+    
+    .ipad.tablet.portrait .header-wrap .row {
+        height: inherit;
+    }
+    
+    .ipad.tablet.portrait .header-date {
+        margin-top: 100px;
+    }
+    
+    .ipad.tablet.portrait .header-biker__media {
+        margin-bottom: 100px;
     }
 }
 
@@ -362,7 +386,7 @@
     .safari-browser .header-wrap {
         padding-bottom: 125px;
     }
-
+    
     .program-event, .excursions-city, .hotels, .gallery-events, .press-about {
         background-size: 728px !important;
     }
@@ -539,11 +563,11 @@
     .hotel-window__content {
         flex-wrap: wrap;
     }
-
+    
     .menu-panel-opened .header-menu__point:not(:last-child) {
         margin-bottom: 60px;
     }
-
+    
     .tab-date {
         justify-content: flex-end;
         .arrow {
@@ -565,13 +589,16 @@
         height: calc(100% - 100px);
     }
     .news-item__data {
-        margin-left: auto;
+        padding-left: 15px;
+        margin: 6px 0 0 auto;
         align-items: flex-start;
         @include font-size(18px);
     }
 }
 
 @media (min-width: 960px) {
+    @import "blocks/overflow-show";
+    
     .open-menu {
         display: none;
     }
@@ -602,9 +629,6 @@
     
     .hotel-window__prices li {
         flex: 1;
-        &:not(:first-child):not(:last-child) {
-            flex: 1 0 12%;
-        }
     }
     .hotel-window__left {
         width: 55%;
@@ -878,8 +902,41 @@
     }
 }
 
-@media (max-width: 719px), (max-height: 750px) {
+@media (max-width: 959px) and (max-height: 800px) {
+    .header-content {
+        position: static;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .header-content__link {
+        position: absolute;
+        bottom: 75px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .header-wrap .row {
+        width: 100%;
+    }
+    
     .header-biker__media {
         display: none;
+    }
+    
+    .header-left {
+        text-align: center;
+    }
+    
+    .header-wrap {
+        z-index: 10;
+        position: relative;
+        -ms-flex: 1;
+        flex: 1;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-bottom: 75px;
     }
 }
