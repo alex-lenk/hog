@@ -1175,8 +1175,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   display: inline-flex;
   -ms-flex-align: center;
   align-items: center;
-  -ms-flex: 0 0 130px;
-  flex: 0 0 130px;
+  -ms-flex: none;
+  flex: none;
   -ms-flex-pack: center;
   justify-content: center;
   white-space: nowrap;

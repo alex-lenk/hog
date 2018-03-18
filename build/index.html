@@ -28,7 +28,7 @@
 
 <body data-spy="scroll" data-target="#navbar-track">
 
-<div class="fixed-menu" id="navbar-track">
+<div class="fixed-menu">
     <div class="fixed-menu__top container">
         <div class="close-menu">
             <svg class="close">
@@ -52,30 +52,79 @@
 
     <ul class="header-menu nav nav-tabs" role="tablist">
         <li class="header-menu__point active">
-            <a href="#section1" class="header-menu__link">О мероприятии</a>
+            <a href="#event" class="header-menu__link">О мероприятии</a>
         </li>
         <li class="header-menu__point">
-            <a href="#section2" class="header-menu__link">Программа</a>
+            <a href="#programm" class="header-menu__link">Программа</a>
         </li>
         <li class="header-menu__point">
-            <a href="#section3" class="header-menu__link">Экскурсии</a>
+            <a href="#excursions" class="header-menu__link">Экскурсии</a>
         </li>
         <li class="header-menu__point">
-            <a href="#section4" class="header-menu__link">Отели</a>
+            <a href="#hotels" class="header-menu__link">Отели</a>
         </li>
         <li class="header-menu__point">
-            <a href="#section5" class="header-menu__link">Галерея</a>
+            <a href="#gallery" class="header-menu__link">Галерея</a>
         </li>
         <li class="header-menu__point">
-            <a href="#section6" class="header-menu__link">Пресса</a>
+            <a href="#press" class="header-menu__link">Пресса</a>
         </li>
     </ul>
 </div>
 
-<header id="section1" class="header">
+<div class="header-panel__second">
+    <div class="header-panel">
+        <div class="header-panel__inner" id="navbar-track">
+            <div class="open-menu">
+                <svg class="nav-button">
+                    <use xlink:href="img/sprite.svg#nav-button"></use>
+                </svg>
+            </div>
+
+            <ul class="header-menu nav nav-tabs" role="tablist">
+                <li class="header-menu__point active">
+                    <a href="#event" class="header-menu__link">О мероприятии</a>
+                </li>
+                <li class="header-menu__point">
+                    <a href="#programm" class="header-menu__link">Программа</a>
+                </li>
+                <li class="header-menu__point">
+                    <a href="#excursions" class="header-menu__link">Экскурсии</a>
+                </li>
+            </ul>
+
+            <a href="#" class="header-logo">
+                <img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="">
+            </a>
+
+            <ul class="header-menu nav nav-tabs" role="tablist">
+                <li class="header-menu__point">
+                    <a href="#hotels" class="header-menu__link">Отели</a>
+                </li>
+                <li class="header-menu__point">
+                    <a href="#fallery" class="header-menu__link">Галерея</a>
+                </li>
+                <li class="header-menu__point">
+                    <a href="#press" class="header-menu__link">Пресса</a>
+                </li>
+            </ul>
+
+            <ul class="header-lang list-unstyled">
+                <li class="language-bar-item language-bar-current">
+                    <span>Ру</span>
+                </li>
+                <li class="language-bar-item">
+                    <a href="http://hograllyminsk.com/en/" class="" title="En (en)"><span>En</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<header id="event" class="header">
     <div class="header-container container">
         <div class="header-panel">
-            <div class="header-panel__inner" id="navbar-track">
+            <div class="header-panel__inner">
                 <div class="open-menu">
                     <svg class="nav-button">
                         <use xlink:href="img/sprite.svg#nav-button"></use>
@@ -84,13 +133,13 @@
 
                 <ul class="header-menu nav nav-tabs" role="tablist">
                     <li class="header-menu__point active">
-                        <a href="#section1" class="header-menu__link">О мероприятии</a>
+                        <a href="#event" class="header-menu__link">О мероприятии</a>
                     </li>
                     <li class="header-menu__point">
-                        <a href="#section2" class="header-menu__link">Программа</a>
+                        <a href="#programm" class="header-menu__link">Программа</a>
                     </li>
                     <li class="header-menu__point">
-                        <a href="#section3" class="header-menu__link">Экскурсии</a>
+                        <a href="#excursions" class="header-menu__link">Экскурсии</a>
                     </li>
                 </ul>
 
@@ -100,13 +149,13 @@
 
                 <ul class="header-menu nav nav-tabs" role="tablist">
                     <li class="header-menu__point">
-                        <a href="#section4" class="header-menu__link">Отели</a>
+                        <a href="#hotels" class="header-menu__link">Отели</a>
                     </li>
                     <li class="header-menu__point">
-                        <a href="#section5" class="header-menu__link">Галерея</a>
+                        <a href="#fallery" class="header-menu__link">Галерея</a>
                     </li>
                     <li class="header-menu__point">
-                        <a href="#section6" class="header-menu__link">Пресса</a>
+                        <a href="#press" class="header-menu__link">Пресса</a>
                     </li>
                 </ul>
 
@@ -197,7 +246,7 @@
 </header>
 
 
-<section id="section2" class="section-block program-event">
+<section id="programm" class="section-block program-event">
     <div class="section-block__inner container">
         <div class="section-block__header row">
             <div class="col-md-9 col-sm-7">
@@ -602,7 +651,7 @@
 </section>
 
 
-<section id="section3" class="excursions-city section-block">
+<section id="excursions" class="excursions-city section-block">
     <div class="section-block__inner container">
         <div class="section-block__header">
             <h2 class="h1 section-title">Экскурсии <span class="section-title__color">Минском</span></h2>
@@ -900,7 +949,7 @@
 </section>
 
 
-<section id="section4" class="hotels section-block">
+<section id="hotels" class="hotels section-block">
     <div class="section-block__inner container">
         <div class="section-block__header">
             <h2 class="h1 section-title">Отели <span class="section-title__color">Минска</span></h2>
@@ -1217,7 +1266,8 @@
     </div>
 </section>
 
-<section id="section5" class="gallery-events section-block">
+
+<section id="gallery" class="gallery-events section-block">
     <div class="section-block__inner container">
         <div class="gallery-photos">
             <div class="section-block__header row">
@@ -1626,6 +1676,258 @@
             </div>
         </div>
 
+    </div>
+</section>
+
+
+<section id="cafe" class="cafe section-block">
+    <div class="section-block__inner container">
+        <div class="section-block__header">
+            <h2 class="h1 section-title">Кафе/Рестораны <span class="section-title__color">Минска</span></h2>
+        </div>
+
+        <div class="hotels-wrap row">
+            <div class="hotel-item col-md-4 col-sm-6">
+                <div class="hotel-item__inner">
+                    <div class="overflow-show overflow-show__hint">
+                        <img src="img/example/img-01.png" alt="">
+                        <svg class="view">
+                            <use xlink:href="img/sprite.svg#view"></use>
+                        </svg>
+                        <span class="text">Подробнее</span>
+                    </div>
+                    <div class="hotel-item__panel">
+                        <div class="hotel-item__name">Гранд Кафе</div>
+                        <div class="hotel-item__price">
+                            -20%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel-item col-md-4 col-sm-6">
+                <div class="hotel-item__inner">
+                    <div class="overflow-show overflow-show__hint">
+                        <img src="img/example/img-02.png" alt="">
+                        <svg class="view">
+                            <use xlink:href="img/sprite.svg#view"></use>
+                        </svg>
+                        <span class="text">Подробнее</span>
+                    </div>
+                    <div class="hotel-item__panel">
+                        <div class="hotel-item__name">Экспедиция. Северная Кухня</div>
+                        <div class="hotel-item__price">
+                            -15%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel-item col-md-4 col-sm-6">
+                <div class="hotel-item__inner">
+                    <div class="overflow-show overflow-show__hint">
+                        <img src="img/example/img-03.png" alt="">
+                        <svg class="view">
+                            <use xlink:href="img/sprite.svg#view"></use>
+                        </svg>
+                        <span class="text">Подробнее</span>
+                    </div>
+                    <div class="hotel-item__panel">
+                        <div class="hotel-item__name">La Crête d’Or</div>
+                        <div class="hotel-item__price">
+                            -20%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel-item col-md-4 col-sm-6">
+                <div class="hotel-item__inner">
+                    <div class="overflow-show overflow-show__hint">
+                        <img src="img/example/img-03.png" alt="">
+                        <svg class="view">
+                            <use xlink:href="img/sprite.svg#view"></use>
+                        </svg>
+                        <span class="text">Подробнее</span>
+                    </div>
+                    <div class="hotel-item__panel">
+                        <div class="hotel-item__name">Ресторан “ЛИДО”</div>
+                        <div class="hotel-item__price">
+                            -10%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel-item col-md-4 col-sm-6">
+                <div class="hotel-item__inner">
+                    <div class="overflow-show overflow-show__hint">
+                        <img src="img/example/img-03.png" alt="">
+                        <svg class="view">
+                            <use xlink:href="img/sprite.svg#view"></use>
+                        </svg>
+                        <span class="text">Подробнее</span>
+                    </div>
+                    <div class="hotel-item__panel">
+                        <div class="hotel-item__name">Кафе “ENZO”</div>
+                        <div class="hotel-item__price">
+                            -25%
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hotel-item col-md-4 col-sm-6">
+                <div class="hotel-item__inner">
+                    <div class="overflow-show overflow-show__hint">
+                        <img src="img/example/img-03.png" alt="">
+                        <svg class="view">
+                            <use xlink:href="img/sprite.svg#view"></use>
+                        </svg>
+                        <span class="text">Подробнее</span>
+                    </div>
+                    <div class="hotel-item__panel">
+                        <div class="hotel-item__name">KITCH'N Brasserie</div>
+                        <div class="hotel-item__price">
+                            -20%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <div class="pagination-prev">
+                <svg class="arrow">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+                <span>Назад</span>
+            </div>
+            <div class="pagination-number">3</div>
+            <div class="pagination-next pagination-disable">
+                <span>Вперед</span>
+                <svg class="arrow">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+            </div>
+        </div>
+
+        <div class="hotel-window container">
+            <div class="hotel-window__close">
+                <svg class="close">
+                    <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+            </div>
+
+            <div class="hotel-window__content">
+                <div class="hotel-window__head hotel-window__left">
+                    <h4 class="hotel-window__title"><a href="#" rel="nofollow" target="_blank">
+                        DoubleTree by Hilton
+                        <svg class="external-link">
+                            <use xlink:href="img/sprite.svg#external-link"></use>
+                        </svg>
+                    </a></h4>
+                    <div class="hotel-window__location"><a href="#" rel="nofollow" target="_blank">
+                        <svg class="location">
+                            <use xlink:href="img/sprite.svg#location"></use>
+                        </svg>
+                        Показать на карте
+                    </a></div>
+                </div>
+
+                <div class="hotel-window__right">
+                    <ul class="hotel-window__prices list-unstyled">
+                        <li>
+                            <div class="hotel-window__prices-inner">
+                                <div class="classes">SGL Room</div>
+                                <div class="cost">$150/<span>ночь</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hotel-window__prices-inner">
+                                <div class="classes">SDBL Room</div>
+                                <div>$220/<span>ночь</span></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hotel-window__prices-inner">
+                                <div class="classes">LUX Room</div>
+                                <div class="cost">$360/<span>ночь</span></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="hotel-window__left">
+                    <div class="hotel-window__big">
+                        <div class="hotel-item__star">
+                            <svg class="star">
+                                <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="star">
+                                <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                            <svg class="star">
+                                <use xlink:href="img/sprite.svg#star"></use>
+                            </svg>
+                        </div>
+                        <div class="hotel-big">
+                            <div class="slider-item"><img src="img/example/gal-01.jpg" alt=""></div>
+                            <div class="slider-item"><img src="img/example/gal-02.jpg" alt=""></div>
+                            <div class="slider-item"><img src="img/example/gal-03.jpg" alt=""></div>
+                            <div class="slider-item"><img src="img/example/gal-04.jpg" alt=""></div>
+                            <div class="slider-item"><img src="img/example/gal-05.jpg" alt=""></div>
+                            <div class="slider-item"><img src="img/example/gal-06.jpg" alt=""></div>
+                            <div class="slider-item"><img src="img/example/gal-07.jpg" alt=""></div>
+                            <div class="slider-item"><img src="img/example/gal-08.jpg" alt=""></div>
+                            <div class="slider-item"><img src="img/example/gal-09.jpg" alt=""></div>
+                            <div class="slider-item"><img src="img/example/gal-10.jpg" alt=""></div>
+                        </div>
+                    </div>
+
+                    <div class="hotel-thrum">
+                        <div class="slider-item"><img src="img/example/gal-01.jpg" alt=""></div>
+                        <div class="slider-item"><img src="img/example/gal-02.jpg" alt=""></div>
+                        <div class="slider-item"><img src="img/example/gal-03.jpg" alt=""></div>
+                        <div class="slider-item"><img src="img/example/gal-04.jpg" alt=""></div>
+                        <div class="slider-item"><img src="img/example/gal-05.jpg" alt=""></div>
+                        <div class="slider-item"><img src="img/example/gal-06.jpg" alt=""></div>
+                        <div class="slider-item"><img src="img/example/gal-07.jpg" alt=""></div>
+                        <div class="slider-item"><img src="img/example/gal-08.jpg" alt=""></div>
+                        <div class="slider-item"><img src="img/example/gal-09.jpg" alt=""></div>
+                        <div class="slider-item"><img src="img/example/gal-10.jpg" alt=""></div>
+                    </div>
+
+                    <p>Гостиница «Беларусь» с рестораном расположена в Минске, в 5 минутах ходьбы от церкви Святой
+                        Равноапостольной Марии Магдалины и реки Свислочь. К услугам гостей бассейн и фитнес-центр,
+                        которыми можно пользоваться за дополнительную плату. Гостям предоставляется бесплатный
+                        Wi-Fi.</p>
+                </div>
+
+                <div class="hotel-window__right">
+                    <div class="bid-form">
+                        <form action="#" class="bid-form__inner">
+                            <div class="bid-form__title">Подать Заявку</div>
+                            <div class="ui-group">
+                                <input type="text" class="ui-field ui-placeholder" placeholder="ф.и.о.">
+                            </div>
+                            <div class="ui-group">
+                                <input type="tel" class="ui-field ui-placeholder" placeholder="Телефон">
+                            </div>
+                            <div class="ui-group">
+                                <input type="email" class="ui-field ui-placeholder" placeholder="Email">
+                            </div>
+                            <div class="ui-group">
+                                <textarea class="ui-field ui-placeholder" placeholder="Сообщение"></textarea>
+                            </div>
+                            <button class="btn btn-white">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+
+                <button class="bid-form__send btn btn-white">Подать Заявку</button>
+            </div>
+        </div>
     </div>
 </section>
 
