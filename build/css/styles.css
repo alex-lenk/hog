@@ -1540,3 +1540,16 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 .menu-panel-opened .fixed-menu {
   -ms-transform: translateX(0);
   transform: translateX(0); }
+
+.cafe .section-block__inner {
+  position: relative; }
+
+.cafe-window__left {
+  width: 50%; }
+
+.cafe-window__right {
+  display: none; }
+
+.open-cafe .hotel-window {
+  opacity: 1;
+  pointer-events: auto; }

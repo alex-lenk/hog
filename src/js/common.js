@@ -173,7 +173,7 @@ $(document).ready(function () {
     var hotelsClass = $('.hotels'),
         openHotel = 'open-hotel';
 
-    $('.hotel-item').click(
+    $('.hotel-point').click(
         function () {
             hotelsClass.addClass(openHotel);
         }
@@ -182,6 +182,25 @@ $(document).ready(function () {
     $('.hotel-window__close').click(
         function () {
             hotelsClass.removeClass(openHotel);
+        }
+    );
+
+    /* END */
+
+    /* BEGIN: открытие и закрытие cafe */
+
+    var cafeClass = $('.cafe'),
+        openCafe = 'open-cafe';
+
+    $('.cafe-point').click(
+        function () {
+            cafeClass.addClass(openCafe);
+        }
+    );
+
+    $('.cafe-window__close').click(
+        function () {
+            cafeClass.removeClass(openCafe);
         }
     );
 
@@ -254,18 +273,14 @@ $(document).ready(function () {
         }
     });
 
-
     function headerSlide() {
-
         this.section = 1;
         this.canScroll = true;
         this.hash = '';
 
-
         /* touch */
         this.position = $('#programm').offset().top;
         this.active = true;
-
 
         this.delta = 0;
         this.lastMouseWheelStep = 2;
@@ -275,7 +290,7 @@ $(document).ready(function () {
     headerSlide.prototype.init = function () {
 
         this.mouseWheel();
-        /*SmoothScroll.disableWheel();*/
+        /* SmoothScroll.disableWheel(); */
         $('#event').on('click', '.header-content__link', this.actionSlide.bind(this, [-1]));
         $('body').on('menu.scroll', {self: this}, function (e, hash, delta) {
             var self = e.data.self;
