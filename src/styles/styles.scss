@@ -166,20 +166,43 @@
 }
 
 .cafe {
+    background: url(../img/bg/cafe-bg.png) no-repeat center top;
+    transition: background-size 0.4s ease;
     .section-block__inner {
         position: relative;
     }
 }
 
 .cafe-window__left {
-    width: 50%;
+    width: 55%;
 }
 
 .cafe-window__right {
-    display: none;
+    width: 42%;
+    margin-left: auto;
 }
 
-.open-cafe .hotel-window {
-    opacity: 1;
-    pointer-events: auto;
+.open-cafe {
+    background-size: 0;
+    .hotel-window {
+        opacity: 1;
+        pointer-events: auto;
+    }
+    .hotels-wrap, .pagination {
+        opacity: 0;
+    }
+}
+
+.cafe-discont {
+    margin-top: 30px;
+    padding: 10px 0;
+    font-weight: 500;
+    background-color: rgba(#262626, .45);
+    text-align: center;
+    @include font-size(23px);
+}
+
+.cafe-discont__text {
+    color: #EE7D00;
+    @include font-size(22px);
 }

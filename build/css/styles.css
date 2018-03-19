@@ -699,7 +699,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 .section-block {
   margin-bottom: 30px;
-  background-size: 100% !important; }
+  background-size: 100%; }
 
 .section-block__inner {
   padding-top: 130px; }
@@ -1541,15 +1541,35 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   -ms-transform: translateX(0);
   transform: translateX(0); }
 
-.cafe .section-block__inner {
-  position: relative; }
+.cafe {
+  background: url(../img/bg/cafe-bg.png) no-repeat center top;
+  transition: background-size 0.4s ease; }
+  .cafe .section-block__inner {
+    position: relative; }
 
 .cafe-window__left {
-  width: 50%; }
+  width: 55%; }
 
 .cafe-window__right {
-  display: none; }
+  width: 42%;
+  margin-left: auto; }
 
-.open-cafe .hotel-window {
-  opacity: 1;
-  pointer-events: auto; }
+.open-cafe {
+  background-size: 0; }
+  .open-cafe .hotel-window {
+    opacity: 1;
+    pointer-events: auto; }
+  .open-cafe .hotels-wrap, .open-cafe .pagination {
+    opacity: 0; }
+
+.cafe-discont {
+  margin-top: 30px;
+  padding: 10px 0;
+  font-weight: 500;
+  background-color: rgba(38, 38, 38, 0.45);
+  text-align: center;
+  font-size: 1.4375rem; }
+
+.cafe-discont__text {
+  color: #EE7D00;
+  font-size: 1.375rem; }
