@@ -1087,7 +1087,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   align-items: center; }
 
 .gallery-events {
-  background: url(../img/bg/gallery-bg.png) no-repeat center top;
+  background-image: url(../img/bg/gallery-bg.png);
   transition: background-size 0.7s ease; }
   .gallery-events .section-block__inner {
     position: relative; }
@@ -1138,8 +1138,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   pointer-events: none; }
 
 .hotels {
-  background: url(../img/bg/hotel-bg.png) no-repeat center top;
-  transition: background-size 0.4s ease; }
+  background-image: url(../img/bg/hotel-bg.png); }
   .hotels .section-block__inner {
     position: relative; }
 
@@ -1221,6 +1220,15 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   opacity: 0;
   pointer-events: none;
   transition: all 0.4s ease; }
+  .hotel-window::before {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #262626;
+    content: '';
+    z-index: -1; }
   .hotel-window p {
     line-height: 1.3; }
 
@@ -1280,11 +1288,13 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   line-height: 1;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: end;
-  align-items: flex-end; }
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
 
 .hotel-window__title {
+  padding-right: 20px;
   margin-bottom: 0;
+  margin-right: auto;
   position: relative;
   display: inline-block;
   text-transform: none;
@@ -1295,7 +1305,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     height: 12px;
     fill: #EE7D00;
     position: absolute;
-    right: -20px;
+    right: 0;
     top: 6px;
     transition: fill 0.4s ease; }
   .hotel-window__title a::after {
@@ -1313,8 +1323,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     fill: #fff; }
 
 .hotel-window__location {
-  margin-left: auto;
-  margin-bottom: 3px;
+  padding-left: 25px;
+  padding-top: 13px;
   position: relative;
   font-weight: 400;
   font-size: 1.125rem; }
@@ -1339,8 +1349,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     height: 16px;
     fill: #fff;
     position: absolute;
-    left: -25px;
-    top: 0;
+    left: 0;
+    bottom: 3px;
     transition: fill 0.4s ease; }
 
 .hotel-window__big {
@@ -1395,23 +1405,32 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 .slider-item:focus {
   outline: none; }
 
-.open-hotel {
-  background-size: 0; }
-  .open-hotel .hotels-wrap, .open-hotel .pagination, .open-hotel .owl-nav {
-    opacity: 0; }
-  .open-hotel .hotel-window {
-    opacity: 1;
-    pointer-events: auto; }
+.open-hotel .hotels-wrap,
+.open-hotel .pagination, .open-hotel .owl-nav {
+  opacity: 0; }
+
+.open-hotel .hotel-window {
+  opacity: 1;
+  pointer-events: auto; }
+
+.program-event,
+.excursions-city,
+.hotels,
+.gallery-events,
+.cafe,
+.press-about {
+  background-repeat: no-repeat;
+  background-position: top center; }
 
 .program-event {
-  background: url(../img/bg/program-event-bg.png) no-repeat top center; }
+  background-image: url(../img/bg/program-event-bg.png); }
 
 .excursions-city {
-  background: url(../img/bg/excursions-bg.png) no-repeat center top; }
+  background-image: url(../img/bg/excursions-bg.png); }
 
 .press-about {
   margin-bottom: 150px;
-  background: url(../img/bg/press-bg.png) no-repeat center top; }
+  background-image: url(../img/bg/press-bg.png); }
   .press-about .owl-stage-outer {
     margin-bottom: 30px; }
 
@@ -1542,7 +1561,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   transform: translateX(0); }
 
 .cafe {
-  background: url(../img/bg/cafe-bg.png) no-repeat center top;
+  background-image: url(../img/bg/cafe-bg.png);
   transition: background-size 0.4s ease; }
   .cafe .section-block__inner {
     position: relative; }
@@ -1554,13 +1573,12 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   width: 42%;
   margin-left: auto; }
 
-.open-cafe {
-  background-size: 0; }
-  .open-cafe .hotel-window {
-    opacity: 1;
-    pointer-events: auto; }
-  .open-cafe .hotels-wrap, .open-cafe .pagination {
-    opacity: 0; }
+.open-cafe .hotel-window {
+  opacity: 1;
+  pointer-events: auto; }
+
+.open-cafe .hotels-wrap, .open-cafe .pagination {
+  opacity: 0; }
 
 .cafe-discont {
   margin-top: 30px;

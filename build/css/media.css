@@ -2,18 +2,20 @@
   body {
     background-size: 50px 50px; }
   .header {
-    background: url(../img/bg/header-bg@2x.jpg) no-repeat center;
+    background-image: url(../img/bg/header-bg@2x.jpg);
     background-size: cover; }
   .program-event {
-    background: url(../img/bg/program-event-bg@2x.png) no-repeat top center; }
+    background-image: url(../img/bg/program-event-bg@2x.png); }
   .excursions-city {
-    background: url(../img/bg/excursions-bg@2x.png) no-repeat center top; }
+    background-image: url(../img/bg/excursions-bg@2x.png); }
   .hotels {
-    background: url(../img/bg/hotel-bg@2x.png) no-repeat center top; }
+    background-image: url(../img/bg/hotel-bg@2x.png); }
   .gallery-events {
-    background: url(../img/bg/gallery-bg@2x.png) no-repeat center top; }
+    background-image: url(../img/bg/gallery-bg@2x.png); }
   .press-about {
-    background: url(../img/bg/press-bg@2x.png) no-repeat center top; } }
+    background-image: url(../img/bg/press-bg@2x.png); }
+  .cafe {
+    background-image: url(../img/bg/cafe-bg@2x.png); } }
 
 @media (max-width: 959px) {
   .overflow-show .view,

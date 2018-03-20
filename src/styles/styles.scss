@@ -19,17 +19,27 @@
 @import "blocks/gallery-events";
 @import "blocks/hotels";
 
+.program-event,
+.excursions-city,
+.hotels,
+.gallery-events,
+.cafe,
+.press-about {
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
 .program-event {
-    background: url(../img/bg/program-event-bg.png) no-repeat top center;
+    background-image: url(../img/bg/program-event-bg.png) ;
 }
 
 .excursions-city {
-    background: url(../img/bg/excursions-bg.png) no-repeat center top;
+    background-image: url(../img/bg/excursions-bg.png);
 }
 
 .press-about {
     margin-bottom: 150px;
-    background: url(../img/bg/press-bg.png) no-repeat center top;
+    background-image: url(../img/bg/press-bg.png);
     .owl-stage-outer {
         margin-bottom: 30px;
     }
@@ -166,7 +176,7 @@
 }
 
 .cafe {
-    background: url(../img/bg/cafe-bg.png) no-repeat center top;
+    background-image: url(../img/bg/cafe-bg.png);
     transition: background-size 0.4s ease;
     .section-block__inner {
         position: relative;
@@ -183,7 +193,6 @@
 }
 
 .open-cafe {
-    background-size: 0;
     .hotel-window {
         opacity: 1;
         pointer-events: auto;
