@@ -30,7 +30,7 @@
 }
 
 .program-event {
-    background-image: url(../img/bg/program-event-bg.png) ;
+    background-image: url(../img/bg/program-event-bg.png);
 }
 
 .excursions-city {
@@ -38,7 +38,6 @@
 }
 
 .press-about {
-    margin-bottom: 150px;
     background-image: url(../img/bg/press-bg.png);
     .owl-stage-outer {
         margin-bottom: 30px;
@@ -183,15 +182,6 @@
     }
 }
 
-.cafe-window__left {
-    width: 55%;
-}
-
-.cafe-window__right {
-    width: 42%;
-    margin-left: auto;
-}
-
 .open-cafe {
     .hotel-window {
         opacity: 1;
@@ -225,7 +215,7 @@
         width: 15px;
         height: 15px;
         margin-left: 10px;
-        fill:#EE7D00;
+        fill: #EE7D00;
         transition: all 0.4s ease;
     }
     &:hover {

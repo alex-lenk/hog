@@ -65,6 +65,7 @@
 }
 
 .panel-body__price {
+    margin-bottom: auto;
     margin-left: auto;
     font-weight: 500;
     @include font-size(22px);

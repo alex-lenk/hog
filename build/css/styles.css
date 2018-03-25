@@ -441,6 +441,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   width: 100%;
   height: 100vh;
   background: url(../img/bg/header-bg.jpg) no-repeat center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   background-size: cover;
   display: -ms-flexbox;
   display: flex;
@@ -595,7 +596,6 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   transform: rotate(90deg); }
 
 .header-date__location {
-  max-width: 206px;
   padding-left: 44px;
   position: relative;
   text-transform: uppercase;
@@ -611,7 +611,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 .header-content__link {
   color: #EE7D00;
   border-bottom: 1px solid;
-  cursor: pointer; }
+  cursor: pointer;
+  white-space: nowrap; }
 
 .header-biker {
   position: relative;
@@ -698,11 +699,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     animation: downUpAnimate 1.5s 1000 linear; }
 
 .section-block {
-  margin-bottom: 30px;
   background-size: 100%; }
-
-.section-block__inner {
-  padding-top: 130px; }
 
 .section-title {
   margin-bottom: 0;
@@ -814,6 +811,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   align-items: center; }
 
 .panel-body__price {
+  margin-bottom: auto;
   margin-left: auto;
   font-weight: 500;
   font-size: 1.375rem; }
@@ -1309,19 +1307,13 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
     right: 0;
     top: 6px;
     transition: fill 0.4s ease; }
-  .hotel-window__title a::after {
-    width: 100%;
-    height: 2px;
-    margin-top: -5px;
-    background-color: #EE7D00;
-    display: block;
-    content: '';
-    transition: all 0.4s ease; }
-  .hotel-window__title a:hover::after {
-    width: 0;
-    background-color: #fff; }
-  .hotel-window__title a:hover .external-link {
-    fill: #fff; }
+  .hotel-window__title a {
+    text-decoration: underline; }
+    .hotel-window__title a:hover::after {
+      width: 0;
+      background-color: #fff; }
+    .hotel-window__title a:hover .external-link {
+      fill: #fff; }
 
 .hotel-window__location {
   padding-left: 25px;
@@ -1430,7 +1422,6 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   background-image: url(../img/bg/excursions-bg.png); }
 
 .press-about {
-  margin-bottom: 150px;
   background-image: url(../img/bg/press-bg.png); }
   .press-about .owl-stage-outer {
     margin-bottom: 30px; }
@@ -1566,13 +1557,6 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   transition: background-size 0.4s ease; }
   .cafe .section-block__inner {
     position: relative; }
-
-.cafe-window__left {
-  width: 55%; }
-
-.cafe-window__right {
-  width: 42%;
-  margin-left: auto; }
 
 .open-cafe .hotel-window {
   opacity: 1;
