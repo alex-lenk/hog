@@ -1,40 +1,51 @@
 {
-  "name": "Artlenk.ru",
-  "version": "1.0.1",
-  "description": "for html+js+css apps",
+  "name": "hog",
+  "version": "2.0.0",
+  "description": "Project hog",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "test"
+  },
   "repository": {
     "type": "git",
-    "url": "http://artlenk.ru"
+    "url": "git+https://github.com/alex-lenk/hog.git"
   },
-  "author": "",
+  "keywords": [
+    "hog",
+    "minsk",
+    "raily"
+  ],
+  "author": "alex-lenk",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alex-lenk/hog/issues"
+  },
+  "homepage": "https://github.com/alex-lenk/hog#readme",
   "dependencies": {
-    "bootstrap": "4.0.0-beta.2",
-    "browser-sync": "^2.18.8",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-cheerio": "^0.6.2",
-    "gulp-imagemin": "^3.2.0",
-    "gulp-minify-css": "^1.2.4",
-    "gulp-notify": "^3.0.0",
-    "gulp-path": "^3.0.3",
-    "gulp-sass": "^3.1.0",
-    "gulp-sourcemaps": "^1.5.0",
-    "gulp-svg-sprites": "^4.0.2",
-    "gulp-svgmin": "^1.2.3",
-    "gulp-svgstore": "^6.1.0",
-    "gulp-uglify": "^2.1.2",
-    "gulp-watch": "^4.3.11",
-    "gulp-x-includer": "^0.1.2",
-    "imagemin-pngquant": "^5.0.0",
-    "path": "^0.12.7",
-    "rimraf": "^2.6.1",
-    "svg-sprite-loader": "0.0.28"
+    "bootstrap": "4.5.3",
+    "browser-sync": "latest",
+    "gulp-autoprefixer": "latest",
+    "gulp-cheerio": "latest",
+    "gulp-imagemin": "latest",
+    "gulp-minify-css": "latest",
+    "gulp-notify": "latest",
+    "gulp-path": "latest",
+    "gulp-sass": "latest",
+    "gulp-sourcemaps": "latest",
+    "gulp-svg-sprites": "latest",
+    "gulp-svgmin": "latest",
+    "gulp-svgstore": "latest",
+    "gulp-uglify": "latest",
+    "gulp-watch": "latest",
+    "path": "latest",
+    "rimraf": "latest",
+    "svg-sprite-loader": "latest"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "gulp-cssmin": "^0.2.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-rigger": "^0.5.8",
-    "gulp-x-includer": "^0.1.2"
+    "gulp": "latest",
+    "gulp-cssmin": "latest",
+    "gulp-rename": "latest",
+    "gulp-rigger": "latest",
+    "gulp-x-includer": "latest"
   }
 }

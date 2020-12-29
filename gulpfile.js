@@ -8,9 +8,8 @@ var gulp = require('gulp'),
     rigger = require('gulp-rigger'),
     cssmin = require('gulp-minify-css'),
     imagemin = require('gulp-imagemin'),
-    pngquant = require('imagemin-pngquant'),
     rimraf = require('rimraf'),
-    includer     = require("gulp-x-includer"),
+    includer = require("gulp-x-includer"),
     browserSync = require("browser-sync"),
     reload = browserSync.reload,
     svgstore = require('gulp-svgstore'),
@@ -18,7 +17,7 @@ var gulp = require('gulp'),
     path = require('path'),
     cheerio = require('gulp-cheerio');
 
-var way = {
+let way = {
     build: {
         html: 'build/',
         js: 'build/js/',
@@ -47,7 +46,7 @@ var way = {
     clean: './build'
 };
 
-var config = {
+let config = {
     server: {
         baseDir: "./build"
     },
@@ -57,9 +56,10 @@ var config = {
     logPrefix: "frontend"
 };
 
+/*
 gulp.task('svgstore', function () {
     return gulp
-        .src('./src/sprite/*.svg')
+        .src('./src/sprite/!*.svg')
         .pipe(svgmin(function (file) {
             var prefix = path.basename(file.relative, path.extname(file.relative));
             return {
@@ -74,22 +74,29 @@ gulp.task('svgstore', function () {
         .pipe(svgstore())
         .pipe(gulp.dest('./build/img'));
 });
+*/
 
-gulp.task('webserver', function () {
-    browserSync(config);
-});
+gulp.task('webserver', gulp.series(function () {
+    return browserSync(config);
+}));
 
-gulp.task('clean', function (cb) {
-    rimraf(way.clean, cb);
-});
-
-gulp.task('html:build', function () {
+gulp.task('html', gulp.series(function () {
     gulp.src(way.src.html)
         .pipe(includer())
         .pipe(gulp.dest(way.build.html))
         .pipe(reload({
             stream: true
         }));
+}));
+
+/*
+
+gulp.task('clean', function (cb) {
+    rimraf(way.clean, cb);
+});
+
+gulp.task('html:build', function () {
+
 });
 
 gulp.task('js:build', function () {
@@ -179,3 +186,4 @@ gulp.task('watch', function () {
 
 
 gulp.task('default', ['build', 'webserver', 'watch']);
+*/
